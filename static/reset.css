@@ -73,10 +73,6 @@ html {
     -webkit-font-smoothing: antialiased;
     height: 100%;
   }
-  a:hover{
-    text-decoration: none;
-  }
-
-  a{
+  a, a:hover{
     text-decoration: none;
   }
