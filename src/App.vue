@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    南方官话吃饭
   </div>
 </template>
 
