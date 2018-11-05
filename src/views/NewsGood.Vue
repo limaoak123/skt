@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是新品页面
+    新品页面
   </div>
 </template>
 

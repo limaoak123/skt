@@ -4,6 +4,7 @@
   </div>
 </template>
 
+<<<<<<< HEAD
 <<<<<<< master
 =======
 
@@ -13,12 +14,19 @@
 
 
 >>>>>>> local
+=======
+
+<style scoped>
+  @import '../static/reset.css'
+</style>
+
+
+>>>>>>> 735bb02d632da85ceeb1102e9e713cade09dab2d
 <script>
 export default {
   name: 'App'
 }
 </script>
 
-<style>
 
-</style>
+
