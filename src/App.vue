@@ -6,7 +6,7 @@
 
 
 <style scoped>
-  @import '../static/reset.css';
+  @import '../static/reset.css'
 </style>
 
 
