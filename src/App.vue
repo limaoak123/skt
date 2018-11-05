@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    
+    <router-link to="/newsGood">新品</router-link>
+    <router-view></router-view>
   </div>
+
 </template>
 
-<<<<<<< master
-=======
 
 <style scoped>
   @import '../static/reset.css';
 </style>
 
 
->>>>>>> local
 <script>
 export default {
   name: 'App'
