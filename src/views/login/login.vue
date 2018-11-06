@@ -5,38 +5,44 @@
             <p v-show="showTishi">{{tishi}}</p>
             <input type="text" placeholder="手机号/邮件地址" v-model="username">
             <input type="password" placeholder="密码" v-model="password">
-            <div class="left"><a class="changelogintype medium" data-type="userAccountLogin" style="visibility: visible;">短信验证码登录</a></div>
-            <div class="right"><label><input name="Fruit" type="checkbox" value="" /><a>记住账号</a></label></div>
+            <div class="left">
+                <a class="changelogintype medium" data-type="userAccountLogin" style="visibility: visible;">短信验证码登录</a>
+            </div>
+            <div class="right">
+                <label><input name="Fruit" type="checkbox" value="" /><a>记住账号</a></label>
+            </div>
             <button v-on:click="login">登录</button>
             <div class="aline">
-            <p v-on:click="ToRegister" class="ToRegister">已有账号？马上登录</p>
-            <p v-on:click="ToRegiste" class="repassword">忘记密码</p>
+                <p v-on:click="ToRegister" class="ToRegister">已有账号？马上登录</p>
+                <p v-on:click="ToRegiste" class="repassword">忘记密码</p>
             </div>
             <div class="smallpicture">
-            <img src="https://hwid1.vmall.com/CAS/up/idmw_rss_23/css/mobile/standard_rss/images/wap_qq_emui9.png?cas20180928">
-            <img src="https://hwid1.vmall.com/CAS/up/idmw_rss_23/css/mobile/standard_rss/images/wap_alipay_emui9.png?cas20180928">
+                <img src="https://hwid1.vmall.com/CAS/up/idmw_rss_23/css/mobile/standard_rss/images/wap_qq_emui9.png?cas20180928">
+                <img src="https://hwid1.vmall.com/CAS/up/idmw_rss_23/css/mobile/standard_rss/images/wap_alipay_emui9.png?cas20180928">
             </div>
             <div class="copy">
-            <p class="copy_more">更多</p>
-            <p class="copy_tip">继续访问即代表您已同意<a>华为商城服务协议</a>和<a>华为隐私政策</a></p>
+                <p class="copy_more">更多</p>
+                <p class="copy_tip">继续访问即代表您已同意<a>华为商城服务协议</a>和<a>华为隐私政策</a></p>
             </div>
         </div>
 
         <div class="register-wrap" v-show="showRegister">
             <h3>使用手机号注册</h3>
             <div class="choosecountry">
-            <a class="c_left">国家/地区</a>
-            <a class="c_right">中国 +86</a>
+                <a class="c_left">国家/地区</a>
+                <a class="c_right">中国 +86</a>
             </div>
             <p v-show="showTishi">{{tishi}}</p>
             <input class="l_height" type="text" placeholder="请输入用户名" v-model="newUsername">
             <input type="password" placeholder="密码" v-model="newPassword">
-             <input type="password" placeholder="确认密码" v-model="newPassword">
-             <div class="gray-tips-EMUI5 reg-tip-gray"><a>至少 8 个字符，不能含有空格。字母、数字、符号至少包含2种。</a></div>
-             <div class="wrapRegister-emptyBgLine"></div>
+            <input type="password" placeholder="确认密码" v-model="newPassword">
+            <div class="gray-tips-EMUI5 reg-tip-gray">
+                <a>至少 8 个字符，不能含有空格。字母、数字、符号至少包含2种。</a>
+            </div>
+            <div class="wrapRegister-emptyBgLine"></div>
             <button v-on:click="register">注册</button>
             <div class="realine">
-            <p v-on:click="ToLogin">已有账号？马上登录</p>
+                <p v-on:click="ToLogin">已有账号？马上登录</p>
             </div>
         </div>
     </div>
