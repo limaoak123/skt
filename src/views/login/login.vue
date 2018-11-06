@@ -243,7 +243,9 @@
 </style>
 
 <script>
+    import axios from 'axios'
     export default{
+        import {setCookie,getCookie} from '../../assets/js/cookie.js'
         data(){
             return{
                 showLogin: true,
@@ -258,31 +260,21 @@
            
             }
         },
+        mounted(){
+             /*页面挂载获取cookie，如果存在username的cookie，则跳转到主页，不需登录*/
+        if(getCookie('username')){
+            this.$router.push('/home')
+        }
+       },
         methods: {
         ToRegister(){
         this.showRegister = true
         this.showLogin = false
-            },
+        },
         ToLogin(){
-                this.showRegister = false
-                this.showLogin = true
-            },
-       }
-    }
-
-</script>
-
-<script>
-    import {setCookie,getCookie} from '../../assets/js/cookie.js'
-    export default{
-    mounted(){
-    /*页面挂载获取cookie，如果存在username的cookie，则跳转到主页，不需登录*/
-        if(getCookie('username')){
-            this.$router.push('/home')
-        }
-    },
-    methods:{
-
+        this.showRegister = false
+        this.showLogin = true
+        },
         register(){
         if(this.newUsername == "" || this.newPassword == ""){
             alert("请输入用户名或密码")
@@ -334,7 +326,8 @@
             })
         }
         }
+       }
     }
-    }
-</script>
+
+
 
