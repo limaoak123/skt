@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="login-wrap" v-show="showLogin">
+        <div class="login-wrap">
             <h3>华为账号</h3>
-            <p v-show="showTishi">{{tishi}}</p>
+            <!-- <p v-show="1">{{tishi}}</p> -->
             <input type="text" placeholder="手机号/邮件地址" v-model="username">
             <input type="password" placeholder="密码" v-model="password">
             <div class="left">
@@ -13,7 +13,7 @@
             </div>
             <button v-on:click="login">登录</button>
             <div class="aline">
-                <p v-on:click="ToRegister" class="ToRegister">已有账号？马上登录</p>
+                <p><router-link to="register">没有账号？马上注册</router-link></p>
                 <p v-on:click="ToRegiste" class="repassword">忘记密码</p>
             </div>
             <div class="smallpicture">
@@ -23,26 +23,6 @@
             <div class="copy">
                 <p class="copy_more">更多</p>
                 <p class="copy_tip">继续访问即代表您已同意<a>华为商城服务协议</a>和<a>华为隐私政策</a></p>
-            </div>
-        </div>
-
-        <div class="register-wrap" v-show="showRegister">
-            <h3>使用手机号注册</h3>
-            <div class="choosecountry">
-                <a class="c_left">国家/地区</a>
-                <a class="c_right">中国 +86</a>
-            </div>
-            <p v-show="showTishi">{{tishi}}</p>
-            <input class="l_height" type="text" placeholder="请输入用户名" v-model="newUsername">
-            <input type="password" placeholder="密码" v-model="newPassword">
-            <input type="password" placeholder="确认密码" v-model="newPassword">
-            <div class="gray-tips-EMUI5 reg-tip-gray">
-                <a>至少 8 个字符，不能含有空格。字母、数字、符号至少包含2种。</a>
-            </div>
-            <div class="wrapRegister-emptyBgLine"></div>
-            <button v-on:click="register">注册</button>
-            <div class="realine">
-                <p v-on:click="ToLogin">已有账号？马上登录</p>
             </div>
         </div>
     </div>
@@ -185,79 +165,17 @@
         }
 
 
-    .register-wrap h3{
-        font-size: 18px;
-        color: #191919;
-        height: 50px;
-        width:100%;
-        line-height: 10px;
-        background: #F0F0F0;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        border-top: 8px solid #FCFCFC;
-        margin-bottom: 25px;
-        font-weight:400;
-    }
-    .choosecountry{
-        line-height:15px;
-    }
-    .choosecountry .c_left{
-        float:left;
-        color:#000;
-        font-size:15px;
-    }
-    .choosecountry .c_right{
-        float:right;
-        color:#808080;
-        font-size:13px;
-    }
-    .l_height{
-        margin-top:65px;
-    }
-    .gray-tips-EMUI5 a{
-        color: #808080;
-        font-size: 13px;
-        margin: 22px 0px;
-        width: 95%;
-        display: block;
-    }
-    .wrapRegister-emptyBgLine{
-        height: 8px;
-        width: 100%;
-        background-color: #F2F2F2;
-        margin-bottom:30px;
-    }
-    .realine p{
-        font-size: 13px;
-        margin-bottom: 16px;
-        color: #005bba;
-        font-size: 13px;
-        font-weight: 500;
-        text-decoration: none;
-        text-align: center;
-    }
+    
 </style>
 
 <script>
-    import axios from 'axios'
-    export default{
+        import axios from 'axios'
         import {setCookie,getCookie} from '../../assets/js/cookie.js'
-        data(){
+    export default{
+        data () {
             return{
-                showLogin: true,
-                showRegister: false,
-                showTishi: false,
-                tishi: '',
                 username: '',
-                password: '',
-                newUsername: '',
-                newPassword: ''
-            
-           
+                password: '',           
             }
         },
         mounted(){
@@ -267,6 +185,15 @@
         }
        },
         methods: {
+        addUser(){
+           axios.post('./api/user/addUser',{
+               username: this.username,
+               password: this.password
+           }).then((result) => {
+               console.log(result);
+           })
+        },
+
         ToRegister(){
         this.showRegister = true
         this.showLogin = false
@@ -275,28 +202,7 @@
         this.showRegister = false
         this.showLogin = true
         },
-        register(){
-        if(this.newUsername == "" || this.newPassword == ""){
-            alert("请输入用户名或密码")
-        }else{
-            let data = {'username':this.newUsername,'password':this.newPassword}
-            this.$http.post('http://localhost/vueapi/index.php/Home/user/register',data).then((res)=>{
-                console.log(res)
-                if(res.data == "ok"){
-                    this.tishi = "注册成功"
-                    this.showTishi = true
-                    this.username = ''
-                    this.password = ''
-                    /*注册成功之后再跳回登录页*/
-                    setTimeout(function(){
-                        this.showRegister = false
-                        this.showLogin = true
-                        this.showTishi = false
-                    }.bind(this),1000)
-                }
-            })
-        }
-    },
+        
         login(){
             if(this.username == "" || this.password == ""){
                 alert("请输入用户名或密码")
