@@ -137,6 +137,12 @@ export default {
 input::-webkit-input-placeholder{
     margin-left: 50px;
 }
+article{
+    position: relative;
+}
+.head{
+    position: fixed;
+}
 .head input{
     width: 80%;
     height: 1.5rem;
@@ -155,6 +161,9 @@ input::-webkit-input-placeholder{
     border: none;
 }
 
+.bside{
+    position: fixed;
+}
 .bside ul{
     float: left; 
     margin-left: -45px;
@@ -241,7 +250,7 @@ input::-webkit-input-placeholder{
         float: left;
         width: 2.75rem;
         height: 2.70rem;
-        margin: 40px 10px;
+        margin: 10px 10px 40px 10px;
         position: relative;
 }
 .clearfix li img{
