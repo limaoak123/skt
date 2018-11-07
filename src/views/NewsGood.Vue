@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="wrapper">
     <ul>
      <li v-for="(item,index) in info" :key="index">
-        <a href="#">
+        <a href="javascript:;" @click="routerTo(item.sid)">
           <div class="img">
             <img :src="'../static/lm_newsImg/'+item.src">
             <span>{{item.txt}}</span>
@@ -44,10 +44,14 @@ export default {
       .catch(error =>{
         console.log(error)
       })
+     },
+     routerTo(sid){
+       console.log(sid);
+       this.$router.push({name: 'goodinfo', params: {goodId:sid}});
      }
     },
     mounted(){
-      this.getData();
+      this.getData()
     }
 }
 </script>
@@ -55,6 +59,9 @@ export default {
 <style scoped>
   @import url(https://res8.vmallres.com/shopdc/cdn/modules/common/mb/css/common.css?v=20181106000017);
   @import '../../static/reset.css';
+  .wrapper{
+    overflow: hidden;
+  }
   ul{
     overflow: hidden;
     padding: 0.5rem 0.6rem 0;

@@ -32,7 +32,7 @@
         "oldprice":""	
     },
     {	
-		"sid":"005",
+		"sid":"001",
         "src":"b5.png",
         "tit":"HUAWEI Mate 20 X",
         "txt": "",
@@ -40,7 +40,7 @@
         "oldprice":""
 	},
 	{	
-		"sid":"006",
+		"sid":"002",
         "src":"b6.png",
         "tit":"荣耀畅玩8C",
         "txt": "直降400",
@@ -48,7 +48,7 @@
         "oldprice":"￥1499"			
 	},
 	{
-		"sid":"007",
+		"sid":"003",
         "src":"b7.png",
         "tit":"荣耀Magic2",
         "txt": "",
@@ -56,7 +56,7 @@
         "oldprice":""
 	},
 	{	
-		"sid":"008",
+		"sid":"004",
 		"src":"b8.png",
 		"tit":"HUAWEI麦芒7",
         "txt": "",
@@ -64,7 +64,7 @@
         "oldprice":""		
 	},
 	{	
-		"sid":"009",
+		"sid":"001",
         "src":"b9.png",
         "tit":"荣耀8X",
         "txt": "",
@@ -72,7 +72,7 @@
         "oldprice":""	
 	},
 	{	
-		"sid":"010",
+		"sid":"002",
         "src":"b10.jpg",
         "tit":"荣耀8X Max",
         "txt": "",

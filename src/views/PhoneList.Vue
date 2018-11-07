@@ -1,7 +1,7 @@
 <template>
     <div> 
         <header>
-            <button></button>
+            <button @click="backHome"></button>
             <h1>手机</h1>
         </header>
         <div class="subTab">
@@ -228,6 +228,9 @@ export default {
      routerTo(sid){
        console.log(sid);
        this.$router.push({name: 'goodinfo', params: {goodId:sid}});
+     },
+     backHome(){
+       this.$router.replace("/")
      }
     },
     mounted(){
