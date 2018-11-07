@@ -17,7 +17,7 @@
         <div class="listInfo">
            <ul>
              <li v-for="(item,index) in pList" :key="index">
-               <a href = 'javascript:;'>
+               <a href = 'javascript:;' @click="routerTo(item.sid)">
                  <div class="imgs">
                    <img :src="'../static/lm_newsImg/'+item.src">
                  </div>
@@ -224,6 +224,10 @@ export default {
        }else{
          console.log("评价排序")
        } 
+     },
+     routerTo(sid){
+       console.log(sid);
+       this.$router.push({name: 'goodinfo', params: {goodId:sid}});
      }
     },
     mounted(){

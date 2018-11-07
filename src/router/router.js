@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 import NewsGood from '../views/NewsGood.vue';
 import PhoneList from '../views/PhoneList.vue';
+import GoodInfo from '../views/GoodInfo.vue';
 
 Vue.use(Router)
 
@@ -15,6 +16,11 @@ export default new Router({
     {
       path: '/phonelist',
       component: PhoneList
+    },
+    {
+      path: '/goodinfo',
+      name: 'goodinfo',
+      component:GoodInfo
     },
   ]
 })
