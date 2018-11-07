@@ -3,6 +3,7 @@ import Router from 'vue-router'
 /*引入页面*/
 import Login from '@/views/login/login.vue'
 import register from '@/views/register/register.vue'
+import classify from '@/views/classify/classify.vue'
 
 
 Vue.use(Router)
@@ -21,9 +22,16 @@ export default new Router({
     },
     {
       path: '',
-      name: 'Login',
+      name: 'login',
       component: Login 
-    }
+    },
+  
+    {
+      path: '/classify',
+      name: 'classify',
+      component: classify
+    },
+
 
   ]
 })

@@ -1,21 +1,20 @@
 <template>
             <div class="register-wrap">
             <h3>使用手机号注册</h3>
+            <p v-show="showTishi">{{ tishi }}</p>
             <div class="choosecountry">
                 <a class="c_left">国家/地区</a>
                 <a class="c_right">中国 +86</a>
             </div>
-            <!-- <p v-show="1">{{tishi}}</p> -->
-            <input class="l_height" type="text" placeholder="请输入用户名" v-model="username">
-            <input type="password" placeholder="密码" v-model="password">
+            <input class="l_height" type="text" placeholder="请输入用户名" v-model="newUsername">
+            <input type="password" placeholder="密码" v-model="newPassword">
             <input type="password" placeholder="确认密码" >
             <div class="gray-tips-EMUI5 reg-tip-gray">
                 <a>至少 8 个字符，不能含有空格。字母、数字、符号至少包含2种。</a>
             </div>
             <div class="wrapRegister-emptyBgLine"></div>
-            <button @click="addUser">注册</button>
+            <button click="addUser">注册</button>
             <div class="realine">
-                <!-- <p rout-link v-on:click="ToLogin">已有账号？马上登录</p> -->
                 <p><router-link to="login">已有账号？马上登录</router-link></p>
             </div>
         </div>
@@ -85,8 +84,10 @@
     export default{
         data () {
             return{
-                username: '',
-                password: '',
+                showTishi: false,
+                newUsername: '',
+                newPassword: '',
+                tishi: '', 
             }
         },
         // mounted(){
@@ -97,32 +98,30 @@
       // }，
         methods: {
         addUser () {
-            var username=this.username
-            var password=this.password
+            var newUsername = this.newUsername
+            var newPassword = this.newPassword
            axios.post('./api/user/addUser',{
-               username: username,
-               password: password
+               newUsername: newUsername,
+               newPassword: newPassword
            }).then((result) => {
                console.log(result);
            })
         },
         register(){
-        if(this.username == "" || this.password == ""){
+        if(this.newUsername  == "" || this.newPassword  == ""){
             alert("请输入用户名或密码")
         }else{
-            let data = {'username':this.username,'password':this.password}
+            let data = {'username':this.newUsername,'password':this.newPassword}
             this.$http.post('http://localhost/vueapi/index.php/Home/user/register',data).then((res)=>{
                 console.log(res)
                 if(res.data == "ok"){
                     this.tishi = "注册成功"
-                    // this.showTishi = true
+                    this.showTishi = true
                     this.username = ''
                     this.password = ''
                     /*注册成功之后再跳回登录页*/
                     setTimeout(function(){
-                        // this.showRegister = false
-                        // this.showLogin = true
-                        // this.showTishi = false
+                        this.showTishi = false
                     }.bind(this),1000)
                 }
             })

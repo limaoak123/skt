@@ -2,7 +2,7 @@
     <div>
         <div class="login-wrap">
             <h3>华为账号</h3>
-            <!-- <p v-show="1">{{tishi}}</p> -->
+            <p v-show="showTishi">{{ tishi }}</p>
             <input type="text" placeholder="手机号/邮件地址" v-model="username">
             <input type="password" placeholder="密码" v-model="password">
             <div class="left">
@@ -11,10 +11,10 @@
             <div class="right">
                 <label><input name="Fruit" type="checkbox" value="" /><a>记住账号</a></label>
             </div>
-            <button v-on:click="login">登录</button>
+            <button click="login">登录</button>
             <div class="aline">
                 <p><router-link to="register">没有账号？马上注册</router-link></p>
-                <p v-on:click="ToRegiste" class="repassword">忘记密码</p>
+                <p class="repassword">忘记密码</p>
             </div>
             <div class="smallpicture">
                 <img src="https://hwid1.vmall.com/CAS/up/idmw_rss_23/css/mobile/standard_rss/images/wap_qq_emui9.png?cas20180928">
@@ -174,35 +174,31 @@
     export default{
         data () {
             return{
+                showTishi: false,
                 username: '',
-                password: '',           
+                password: '', 
+                tishi: '', 
+              
+                     
             }
         },
-        mounted(){
-             /*页面挂载获取cookie，如果存在username的cookie，则跳转到主页，不需登录*/
-        if(getCookie('username')){
-            this.$router.push('/home')
-        }
-       },
+        // mounted(){
+        //      /*页面挂载获取cookie，如果存在username的cookie，则跳转到主页，不需登录*/
+        // if(getCookie('username')){
+        //     this.$router.push('/home')
+        // }
+    //    },
         methods: {
         addUser(){
+            var username = this.username;
+            var password = this.password;
            axios.post('./api/user/addUser',{
-               username: this.username,
-               password: this.password
+               username: username,
+               password: password
            }).then((result) => {
                console.log(result);
            })
         },
-
-        ToRegister(){
-        this.showRegister = true
-        this.showLogin = false
-        },
-        ToLogin(){
-        this.showRegister = false
-        this.showLogin = true
-        },
-        
         login(){
             if(this.username == "" || this.password == ""){
                 alert("请输入用户名或密码")
@@ -218,13 +214,10 @@
                 }else if(res.data == 0){
                     this.tishi = "密码输入错误"
                     this.showTishi = true
-                }else if(res.data == 'admin'){
-                /*路由跳转this.$router.push*/
-                    this.$router.push('/main')
                 }else{
                     this.tishi = "登录成功"
                     this.showTishi = true
-                    setCookie('username',this.username,1000*60)
+                    setCookie('username',this.username,10000*600)
                     setTimeout(function(){
                         this.$router.push('/home')
                     }.bind(this),1000)
