@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <router-link to="/newsGood">新品</router-link>
-    <router-view></router-view>
+         <router-view></router-view> 
   </div>
 
 </template>
@@ -14,10 +13,10 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+
 }
 </script>
 
-<style>
 
-</style>
+
