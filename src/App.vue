@@ -1,24 +1,23 @@
 <template>
   <div id="app">
-    
+    <router-view name="caiwen"></router-view>
+    <router-view name="my"></router-view>
   </div>
 </template>
 
-<<<<<<< master
-=======
 
 <style scoped>
   @import '../static/reset.css';
+  @import url(https://res8.vmallres.com/shopdc/cdn/modules/common/mb/css/common.css?v=20181106000017);
+  @import url(https://res8.vmallres.com/shopdc/cdn/modules-bf/yiqm/com/mb/css/swiper.min.css?v=20181106121156);
 </style>
 
 
->>>>>>> local
 <script>
+
 export default {
   name: 'App'
 }
 </script>
 
-<style>
 
-</style>

@@ -1,0 +1,249 @@
+{
+  "code": 0,
+  "data": {
+    "flagship": [{
+      "flagshipUrl": "https://res3.vmallres.com/shopdc/pic/9657319c-52fe-42d9-ab3d-c4668ee623f6.jpg",
+      "contentUrl": "https://res8.vmallres.com/shopdc/pic/e149969d-0ec6-4373-ab02-a36cd7d1a268.jpg"
+    }],
+    "oneone": {
+      "titileUrl": "https://res5.vmallres.com/shopdc/pic/ea7a8fcd-a4df-4add-aa88-cca857bd5a00.jpg",
+      "contentUrl": [{
+          "picUrl": "https://res5.vmallres.com/shopdc/pic/0aaa6900-f24a-4e48-ab7d-967e1e4592fd.jpg"
+        },
+        {
+          "picUrl": "https://res3.vmallres.com/shopdc/pic/66e431b6-b132-49ac-8be8-77db39574270.jpg"
+        },
+        {
+          "picUrl": "https://res3.vmallres.com/shopdc/pic/38161858-b0e8-448f-8707-602af0826f5c.jpg"
+        },
+        {
+          "picUrl": "https://res2.vmallres.com/shopdc/pic/8cfeb900-0bb1-45f8-9097-c65cf1e38369.jpg"
+        },
+        {
+          "picUrl": "https://res5.vmallres.com/shopdc/pic/56e499a2-8586-4e0d-9c52-2ecf9bac53d0.jpg"
+        },
+        {
+          "picUrl": "https://res3.vmallres.com/shopdc/pic/25cc08bc-8269-4121-90ec-6f83c5ecff78.jpg"
+        },
+        {
+          "picUrl": "https://res2.vmallres.com/shopdc/pic/872c2aea-7834-4d0f-9dc9-c46fe4a9b103.jpg"
+        }
+      ]
+    },
+    "sale": {
+      "titileUrl": "https://res7.vmallres.com/shopdc/pic/7199ed84-5a78-444c-a5d0-5bc51db3fd33.jpg",
+      "yhjUrl": "https://res4.vmallres.com/shopdc/pic/3584a327-8e53-4423-9314-efd02ee4d884.jpg",
+      "bannerUrl": [
+          {
+          "bannerUrl": "https://res5.vmallres.com/shopdc/pic/6321b3f8-dcdd-49c3-a793-8a55dccd3753.jpg",
+          "bannerTit": "HUAWEI WATCH GT",
+          "bannerGn": "强劲续航",
+          "money": "1288",
+          "whyShop": "限量预订"
+        },
+        {
+          "bannerUrl": "https://res8.vmallres.com/shopdc/pic/909d31e4-b2e7-468e-8af7-4bc0ee8f5cdf.jpg",
+          "bannerTit": "华为AI音箱",
+          "bannerGn": "丹拿音质",
+          "money": "399",
+          "whyShop": "首发开售"
+        },
+        {
+          "bannerUrl": "https://res0.vmallres.com/shopdc/pic/cd29fe08-9952-479d-8ce3-d64bdd2e9c6f.jpg",
+          "bannerTit": "华为无线充电器",
+          "bannerGn": "15W充电",
+          "money": "249",
+          "whyShop": "首发开售"
+        },
+        {
+          "bannerUrl": "https://res0.vmallres.com/shopdc/pic/97dc49f8-9317-4467-8d60-e2db682b4a63.jpg",
+          "bannerTit": "华为备咖存储",
+          "bannerGn": "支持Mate20 系列",
+          "money": "699",
+          "whyShop": "首发开售"
+        },
+        {
+          "bannerUrl": "https://res7.vmallres.com/shopdc/pic/580a97db-ad07-477e-b29e-574b8824f634.jpg",
+          "bannerTit": "华为车载充电器",
+          "bannerGn": "40W超级快充",
+          "money": "198",
+          "whyShop": "首发开售"
+        },
+        {
+          "bannerUrl": "https://res5.vmallres.com/shopdc/pic/a6bbaf37-8669-4bde-b2a6-6e6cafe20ed8.jpg",
+          "bannerTit": "华为儿童手表 3 Pro",
+          "bannerGn": "4G全网通",
+          "money": "1288",
+          "whyShop": "限量预订"
+        },
+        {
+          "bannerUrl": "https://res2.vmallres.com/shopdc/pic/9f54bd22-6750-46b4-bdfb-e5334355b2ef.jpg",
+          "bannerTit": "华为畅享平板",
+          "bannerGn": "强劲续航",
+          "money": "1288",
+          "whyShop": "限量预订"
+        },
+        {
+          "bannerUrl": "https://res8.vmallres.com/shopdc/pic/4162f4ca-1bea-4be7-9270-ea1802c00806.jpg",
+          "bannerTit": "华为平板 M5 青春版",
+          "bannerGn": "强劲续航",
+          "money": "1288",
+          "whyShop": "限量预订"
+        }
+      ],
+      "contentUrl": [{
+          "picUrl": "https://res8.vmallres.com/shopdc/pic/4099740f-e6b0-4ff2-93ae-15721ac95f52.jpg"
+        },
+        {
+          "picUrl": "https://res4.vmallres.com/shopdc/pic/836145f3-3cd7-4660-92ae-64f880f224ce.jpg"
+        }
+      ],
+      "clickUrl": {
+        "mac": [{
+            "picUrl": "https://res2.vmallres.com/pimages//product/6901443209439/428_428_1513592270915mp.jpg",
+            "title": "HUAWEI MateBook D",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res7.vmallres.com/pimages//product/6901443181216/428_428_1539915138382mp.png",
+            "title": "HUAWEI MateBook X",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res3.vmallres.com/pimages//product/6901443215270/428_428_1531378553233mp.jpg",
+            "title": "华为平板 M5 8.4英寸",
+            "gneng": "赠保护套+3期免息",
+            "price": "¥2088"
+          },
+          {
+            "picUrl": "https://res7.vmallres.com/pimages//product/6901443228744/428_428_1531379658470mp.jpg",
+            "title": "华为平板 M5 Pro",
+            "gneng": "最高优惠420",
+            "price": "¥3488"
+          }
+        ],
+        "erji": [{
+            "picUrl": "https://res0.vmallres.com/pimages//product/6901443068319/428_428_1539762632826mp.png",
+            "title": "华为小天鹅蓝牙音箱",
+            "gneng": "支持蓝牙免提通话",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res9.vmallres.com/pimages//product/6901443221059/428_428_1524193497007mp.jpg",
+            "title": "华为主动降噪耳机3",
+            "gneng": "Type C降噪免充电",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res4.vmallres.com/pimages//product/6901443204694/428_428_1539762466042mp.png",
+            "title": "华为运动心率蓝牙耳机R1 Pro",
+            "gneng": "可测心理压力",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res8.vmallres.com/pimages//product/6901443165582/428_428_1490951130265mp.jpg",
+            "title": "华为运动蓝牙耳机",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          }
+        ],
+        "zhineng": [{
+            "picUrl": "https://res2.vmallres.com/pimages//product/6901443204212/428_428_1507769117117mp.jpg",
+            "title": "HUAWEI WATCH 2 Pro",
+            "gneng": "3期免息",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res9.vmallres.com/pimages//product/6901443197828/428_428_1539765169918mp.png",
+            "title": "HUAWEI WATCH 2",
+            "gneng": "3期免息",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res3.vmallres.com/pimages//product/6901443190256/428_428_1498099502823mp.jpg",
+            "title": "华为运动手环",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res7.vmallres.com/pimages//product/6901443197262/428_428_1506139200867mp.jpg",
+            "title": "华为手环B3 青春版",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          }
+        ],
+        "dianyuan": [{
+            "picUrl": "https://res6.vmallres.com/pimages//product/6901443155439/428_428_1534230935722mp.jpg",
+            "title": "华为4.5V5A车载充电器套装（含 5A Type-C数据线）",
+            "gneng": "支持4.5V5A超级快充",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res3.vmallres.com/pimages//product/6901443156689/428_428_1484106183237mp.jpg",
+            "title": "HUAWEI SuperCharge 快速充电器（白色）",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res5.vmallres.com/pimages//product/6901443173839/428_428_1493028354138mp.jpg",
+            "title": "华为10000mAh移动电源",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res0.vmallres.com/pimages//product/6901443231737/428_428_1538125700227mp.jpg",
+            "title": "华为5000mAh 移动电源",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          }
+        ],
+        "jiaju": [{
+            "picUrl": "https://res0.vmallres.com/pimages//product/6901443249282/428_428_1534495920255mp.jpg",
+            "title": "华为随行WiFi 2 畅享版",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res7.vmallres.com/pimages//product/6901443218530/428_428_1521457453383mp.jpg",
+            "title": "华为补光灯自拍杆",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res0.vmallres.com/pimages//product/6901443238613/428_428_1532052887331mp.jpg",
+            "title": "华为路由器WS5102",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          },
+          {
+            "picUrl": "https://res9.vmallres.com/pimages//product/6901443250165/428_428_1531798781472mp.jpg",
+            "title": "华为全景相机酷玩版",
+            "gneng": "最高优惠420",
+            "price": "¥4888"
+          }
+        ]
+
+      }
+    },
+    "banner2":[
+      {
+        "bannerUrl":"https://res0.vmallres.com/shopdc/pic/5d5d63fd-fa9f-4668-afaa-a9f5954308e9.png"
+      },{
+        "bannerUrl":"https://res1.vmallres.com/shopdc/pic/ce2d2789-aec9-4df8-9cf7-eba082ac482a.jpg"
+      },{
+        "bannerUrl":"https://res2.vmallres.com/shopdc/pic/5864a7dd-7b0c-4d6a-9ef1-1283652b8f7a.jpg"
+      },{
+        "bannerUrl":"https://res0.vmallres.com/shopdc/pic/ff4421d6-1411-443e-ac62-e53472b93ba0.jpg"
+      }
+    ],
+    "gouji":[
+      {
+        "picUrl":"https://res4.vmallres.com/shopdc/pic/03d35e2f-eb35-462b-aee6-283c702292e7.jpg"
+      }
+    ]
+  }
+
+
+}
