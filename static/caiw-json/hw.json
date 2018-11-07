@@ -242,6 +242,38 @@
       {
         "picUrl":"https://res4.vmallres.com/shopdc/pic/03d35e2f-eb35-462b-aee6-283c702292e7.jpg"
       }
+    ],
+    "myRecommend":[
+      {
+      "picUrl":"https://res.vmallres.com/pimages/recommendmsg/2018110102176139.jpg",
+      "message": "-1",
+      "sendTime": "2018-11-01 14:17:28+0800",
+      "title": "-1"
+      },
+      {
+        "picUrl":"https://res.vmallres.com/pimages/recommendmsg/2018102703418474.png",
+        "message": "-1",
+        "sendTime": "2018-11-01 14:17:28+0800",
+        "title": "-1"
+      },
+      {
+        "picUrl":"https://res.vmallres.com/pimages/recommendmsg/2018103111320207.png",
+        "message": "-1",
+        "sendTime": "2018-11-01 14:17:28+0800",
+        "title": "-1"
+      },
+      {
+        "picUrl":"https://res.vmallres.com/pimages/recommendmsg/2018102710172431.jpg",
+        "message": "开车充电30分钟，从容一整天，晒单有机会赢3999携程礼品卡",
+        "sendTime": "2018-10-27 10:17:47+0800",
+        "title": "华为车载充电器"
+      },
+      {
+        "picUrl":"https://res.vmallres.com/pimages/recommendmsg/2018102710168590.jpg",
+        "message": "仅售99元起，支持HUAWEI Mate 20 pro 15W及iPhone系列 7.5W快充，晒单",
+        "sendTime": "2018-10-27 10:16:53+0800",
+        "title": "华为无线充电器"
+      }
     ]
   }
 
