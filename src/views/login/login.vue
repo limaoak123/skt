@@ -188,7 +188,8 @@
                password: password
            }).then((result) => {
                if(result.data.code == 100){
-                   alert(123)
+                   console.log(result);
+                   alert('登录成功');
                }
            })
         },

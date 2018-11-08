@@ -100,6 +100,7 @@
                newPassword: newPassword
            }).then((result) => {
                console.log(result);
+                alert('注册成功');
            })
         },
         regnewUsername () {
