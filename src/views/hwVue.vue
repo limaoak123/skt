@@ -1,15 +1,16 @@
 <template>
     <div style="background-color: rgb(194, 33, 42)">
+        <!-- <router-link to='/my'>1111111111</router-link> -->
         <div class="J_mod mod-topnav topnav-244464">
-    <!-- WAP页头导航 -->
+    <!-- WAP页头导航 登录注册-->
             <div class="area">
-                <a class="unlogin" href="javascript:;" style="background: rgba(255, 255, 255, 0.1);">
+                <a class="unlogin" href="javascript:;" :style="login== true ? 'display: none; background: rgba(255, 255, 255, 0.1);':'display: block; background: rgba(255, 255, 255, 0.1);'">
                     <img src="https://res.vmallres.com/pimages//sale/2018-02/20180227205926118.png">
                     <span>登录 | 注册</span>
                 </a>
-                <a class="login hide" href="javascript:;" style="display: none; background: rgba(255, 255, 255, 0.1);">
-                    <img src="https://res.vmallres.com/pimages//sale/2018-02/20180227205926118.png" style="display:none">
-                    <span class="loginName"></span>
+                <a class="login hide" href="javascript:;" :style="login== true ? 'display: block; background: rgba(255, 255, 255, 0.1);':'display: none; background: rgba(255, 255, 255, 0.1);'">
+                    <img src="https://res.vmallres.com/pimages//sale/2018-02/20180227205926118.png" :style="login== true ? '':'display: none;'">
+                    <span class="loginName">{{loginName}}</span>
                 </a>
             </div>
             <div class="wrp" style="background-color:;">
@@ -17,7 +18,7 @@
             </div>
             <!-- 热点区 -->
             <div class="J_anchors">
-                <a class="J_anchor anchor-hotList" href="https://m.vmall.com/" style="width:5.4em; height:1.7em; left:0.55em; top:0em;" target="_blank"></a>     
+                <a class="J_anchor anchor-hotList" href="" style="width:5.4em; height:1.7em; left:0.55em; top:0em;" target="_blank"></a>     
             </div>
     <!-- /WAP页头导航 -->
         </div>
@@ -53,18 +54,18 @@
         <div class="J_mod mod-mobile-fixednav fixednav-244470">
     <!-- H5固定导航 -->
             <div class="mobileMod14-wrp" style="height:2.5em;">
-                <nav class="mobileMod14 list_nav" style="height: 2.5em; position: relative; top: 0px;">
+                <nav class="mobileMod14 list_nav" style="height: 2.5em; position: relative; top: 0px;"  :style="searchBarFixed == true ? 'position:fixed;' :'position: relative;'">
                     <ul id="fixedNav" class="flex clearfix" style="height:2.5em;background:#5a018e url(https://res1.vmallres.com/shopdc/pic/539e7afd-9f54-4c6d-8d87-80dcfcf2e71c.jpg) no-repeat center center;background-size:100% auto;">
-                        <li class="current" style="width:25%;height:2.5em;line-height:2.5em;">
+                        <li class="current" style="width:25%;height:2.5em;line-height:2.5em;" @click="jump(0)">
                             <a href="javascript:;" data-anchor="gps-1" style="font-size:0.8em;"></a>
                         </li>
-                        <li style="width:25%;height:2.5em;line-height:2.5em;" class="">
+                        <li style="width:25%;height:2.5em;line-height:2.5em;" class="current" @click="jump(1)">
                             <a href="javascript:;" data-anchor="gps-2" style="font-size:0.8em;"></a>
                         </li>
-                        <li style="width:25%;height:2.5em;line-height:2.5em;" class="">
+                        <li style="width:25%;height:2.5em;line-height:2.5em;" class="current" @click="jump(2)">
                             <a href="javascript:;" data-anchor="gps-3" style="font-size:0.8em;"></a>
                         </li>
-                        <li style="width:25%;height:2.5em;line-height:2.5em;">
+                        <li style="width:25%;height:2.5em;line-height:2.5em;" class="current" @click="jump(3)">
                             <a href="javascript:;" data-anchor="gps-4" style="font-size:0.8em;"></a>
                         </li>
                     </ul>
@@ -118,6 +119,7 @@
     <!-- /pic领券 -->
         </div>
 
+<!-- 年度旗舰 -->
         <div class="J_mod mod-pic" style="margin-top:0em;margin-bottom:0em;position: relative;">
     <!-- 图模块 -->
             <div id="gps-1" class="hrefs">
@@ -189,7 +191,9 @@
                 </div>
             </div>
         </div>
-        <!-- 双十一抢购 -->
+
+
+<!-- 双十一抢购 -->
         <div class="J_mod mod-pic" style="margin-top:0em;margin-bottom:0em;position: relative;">
     <!-- 图模块 -->
             <div id="gps-2" class="hrefs"></div>
@@ -202,11 +206,11 @@
     <!-- /图模块 -->
         </div>
         <div class="J_mod mod-mobile-coupons couponpic-244484" v-for="(item,index) in twoList" :key="index">
-    <!-- pic领券 -->
+    <!-- pic领券  跳转详情页-->
             <div class="mobileMod19-coupons-wrp" style="background:url('') no-repeat center center ;padding-top:0em; padding-bottom:0em;">
                 <div class="mobileMod19-coupons">
                     <div class="J_anchors coupons clearfix">
-                        <a href="" class="J_anchor anchor-hotList" style="width:8.85rem;height:14.675rem;left:0rem;top:0.05rem;"></a>
+                        <a href="javascript:;" @click="routerTo(item.id)" class="J_anchor anchor-hotList" style="width:8.85rem;height:14.675rem;left:0rem;top:0.05rem;"></a>
                         <a href="" class="J_anchor anchor-hotList" style="width:9.025rem;height:14.725rem;left:8.975rem;top:0rem;"></a>
                     </div>
                     <img :src="item.picUrl" alt="">
@@ -215,7 +219,7 @@
     <!-- /pic领券 -->
         </div>
 
-        <!-- 超值巨惠 -->
+<!-- 超值巨惠 -->
         <div class="J_mod mod-pic" style="margin-top:0em;margin-bottom:0em;position: relative;">
     <!-- 图模块 -->
             <div id="gps-3" class="hrefs">
@@ -417,7 +421,7 @@
         
         <div class="J_mod mod-moblie-swiper" style="margin-top:0.5em;margin-bottom:0.5em;">
     <!-- H5轮播图 -->
-            <section class="pro-gallery" style="padding-top:">
+            <section class="pro-gallery" style="position:relative">
                 <div class="swiper-container swiper-container-horizontal">
                     <ul style="width: 100%; transform: translate3d(-716px, 0px, 0px); transition-duration: 0ms;" class="swiper-wrapper">
                         <li v-for="(item,index) in banner2" style="width: 375px;" class="swiper-slide swiper-slide-duplicate" :key="index">
@@ -436,8 +440,8 @@
             </section>
     <!--/H5轮播图-->
         </div>
-
-        <div class="J_mod mod-pic" style="margin-top:0em;margin-bottom:0em;position: relative;" data-config="{&quot;moduleType&quot;:&quot;normal&quot;}" data-analytics="{&quot;Id&quot;:&quot;2&quot;,&quot;name&quot;:&quot;图模块&quot;}">
+<!-- 购机福利 -->
+        <div class="J_mod mod-pic" style="margin-top:0em;margin-bottom:0em;position: relative;">
     <!-- 图模块 -->
             <div id="gps-4" class="hrefs"></div>
             <div class="pic-wrap">
@@ -467,7 +471,7 @@
             <div class="pic-wrap">
                 <img src="https://res8.vmallres.com/shopdc/pic/af638e74-b05a-47b5-8ee6-d9be72981f01.jpg" alt="">
             </div>
-    <!-- 热点区 -->
+        <!-- 热点区 -->
             <div class="J_anchors">
                 <a class="J_anchor anchor-hotList" href="https://msale.vmall.com/cjdzz.html" style="width:5.625em; height:6.3em; left:6.2em; top:0em;" ></a>
             </div>
@@ -522,7 +526,7 @@
             <div class="pic-wrap">
                 <img src="https://res9.vmallres.com/shopdc/pic/597f11e1-fc45-4494-8b30-9e063b04bc89.jpg" alt="">
             </div>
-    <!-- 热点区 -->
+        <!-- 热点区 -->
             <div class="J_anchors">
                 <a class="J_anchor anchor-hotList" href="" style="width:5.025em; height:2.9em; left:2.95em; top:1.425em;" ></a>
                 <a class="J_anchor anchor-hotList" href="0" style="width:5.225em; height:2.625em; left:9.825em; top:1.475em;"></a>
@@ -538,6 +542,7 @@
 <script>
 import Swiper from "../../static/swiper-3.4.2.min.js"
 import axios from "axios"
+
 
 export default {
     data() {
@@ -570,11 +575,13 @@ export default {
                     id:'jiaju',
                     name:'智能家居'
                 }
-            ]
+            ],
+            searchBarFixed:false,
+            login:false,
+            loginName:''
         }
     },
     methods: {
-
         getList(){
             axios.get("/static/caiw-json/hw.json").then((res) => {
                 this.swiperList=res.data.data.sale.bannerUrl;
@@ -587,29 +594,74 @@ export default {
                 this.chaozhi=res.data.data.sale.contentUrl;
                 this.banner2=res.data.data.banner2;
                 this.gouji=res.data.data.gouji;
-                console.log(res.data.data.banner2);
-                this.createSwiper();
                 }).catch((result)=>{
                     console.log(result);
                 })
         },
         createSwiper() {
                 var swiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
                 paginationClickable: true,
                 pagination : '.swiper-pagination',
+                observer:true,
+                observeParents:true,
                 loop: true,
                 speed: 600,
-                autoplay: 4000,
+                autoplay: 2000,
                 nextButton: '.swiper-button-next',
                 prevButton: '.swiper-button-prev',
                 });
-            console.log('轮播运行了');
         },
-            
+        handleScroll () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+            if (scrollTop >682) {
+            this.searchBarFixed = true;
+            } else {
+            this.searchBarFixed = false
+            }
+        },
+        jump (index) {
+            clearInterval(timer);
+            let total = [1114,1672,4120,5896];
+            var timer=null;
+            timer = setInterval(function(e) {
+				var e = e || event;
+				if(document.documentElement.scrollTop >= total[index]) {
+					document.documentElement.scrollTop = total[index];
+					if(document.documentElement.scrollTop <= total[index]) {
+						clearInterval(timer);
+					}
+				} else {
+					document.documentElement.scrollTop = total[index];
+					if(document.documentElement.scrollTop >= total[index]) {
+						clearInterval(timer);
+					}
+				}
+			}, 1);
+        },
+        routerTo(sid){
+            // console.log(sid);
+            this.$router.push({name:'xq',params:{id:sid}})
+        },
+        setLocalStorage(){
+            localStorage.setItem('loginInfo', '1');
+        },
+        ifLogin(){
+            if(localStorage.getItem('loginInfo')){
+                this.loginName=localStorage.getItem('loginInfo');
+                // console.log(localStorage.getItem('loginInfo'))
+                this.login=true
+            }else{
+                this.login=false;
+            }
+        }
     },
     mounted(){
-      this.getList();
-      this.createSwiper();
+        window.addEventListener('scroll', this.handleScroll);
+        this.getList();
+        this.createSwiper();
+        this.setLocalStorage();
+        this.ifLogin();
     }
 };
 </script>
@@ -691,9 +743,6 @@ nav.mobileMod14 {
     content: "";
     display: table;
 }
-/* .fixednav-244470 .mobileMod14 li.current {
-    background: ;
-} */
 nav.mobileMod14 li {
     text-align: center;
     float: left;
@@ -821,7 +870,8 @@ nav.mobileMod14 li {
     margin-top: 0;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    font-weight: normal;
+    /* overflow: hidden; */
 }
 .mod-prohotone .qqkh-top-pro-tab .qqkh-pro-ads .pro-price {
     text-align: center;
@@ -964,6 +1014,7 @@ ul, menu, dir {
 .mod-siqmbfprdtab .tab-box .tab-title li:first-child:nth-last-child(5), .mod-siqmbfprdtab .tab-box .tab-title li:first-child:nth-last-child(5)~li {
     width: 20%;
 }
+
 .mod-siqmbfprdtab .tab-box .tab-title li {
     height: 1.25rem;
     line-height: 1.25rem;
@@ -976,22 +1027,14 @@ ul, menu, dir {
 i, cite, em, var, address, dfn {
     font-style: italic;
 }
+
 .mod-siqmbfprdtab .tab-box .tab-title li.act i {
     height: 1.4rem;
     line-height: 1.25rem;
 }
-.mod-siqmbfprdtab .tab-box .tab-title li i em {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-    bottom: -.325em;
-    left: 50%;
-    margin-left: -.212em;
-    border-top: .425em solid transparent;
-    border-right: .425em solid transparent;
-    border-left: .425em solid transparent;
-}
+
+
+
 .mod-siqmbfprdtab .tab-box .tab-title li i {
     display: block;
     position: absolute;
@@ -1106,7 +1149,8 @@ i, cite, em, var, address, dfn {
     font-weight: 700;
     padding-left: .3em;
 }
-.mod-siqmbfprdtab .tab-box .tab-title li i em {
+
+.tab-box .tab-title li i em {
     position: absolute;
     display: block;
     width: 0;

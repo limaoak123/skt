@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <router-view name="caiwen"></router-view>
-    <router-view name="my"></router-view>
+    <router-view></router-view>
   </div>
 </template>
 

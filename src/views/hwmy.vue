@@ -1,24 +1,46 @@
 <template>
     <div style="background-color: #EAEAEA;">
-
-
+        
         <section class="userinfo">
             <div class="u-info">
-                <p class="u-bg" style="opacity: 0;"></p> 
-                <div class="u-state">
-                    <p class="u-login" style="display: block;">
+                <p class="u-bg" :style="searchBarFixed == true ? 'opacity: 1;' :'opacity: 0;'"></p> 
+                <div class="u-state" v-if="login==false">
+                    <p class="u-login" :style="searchBarFixed == true ? 'display:table-cell;' :'display: block;'">
                         <a href="/account/applogin?url=/personal">
                         登录 / 注册
                             <i class="arrow"></i>
                         </a> 
-                        <a href="/account/applogin?url=/personal" class="u-m-vip" style="display: block;">享受更多会员权益</a>
+                        <a href="/account/applogin?url=/personal" class="u-m-vip" :style="searchBarFixed == true ? 'display: inline-block' :'display: block;'">享受更多会员权益</a>
+                    </p>
+                </div>
+                <div class="u-state" v-else>
+                    <p class="u-accounts" :style="searchBarFixed == true ? 'display:table-cell;' :'display: block;'"><!----> 
+                        <a href="/member/point" class="u-name" v-if="searchBarFixed == true">
+                            <i class="u-img">
+                                <img src="https://res.vmallres.com/nwap/20181015/staticm/img/personal/defaultface_user_after.png">
+                            </i>
+                        </a>
+                        <span>
+                            {{loginName}}
+                        </span> 
+                        <a href="/auth/index" class="u-auth" v-if="searchBarFixed == false">
+                            <em>实名赚积分</em>
+                        </a>
+                    </p> 
+                    <p class="u-vip" v-if="searchBarFixed == false">
+                        <a href="/member/privilege">
+                            <span>
+                                <i class="icon-benefit"></i> 
+                                <em>查看我的权益</em>
+                            </span>
+                        </a>
                     </p>
                 </div> 
                 <section class="shortcut">
                     <a class="icon-message"></a>
                 </section>
             </div> 
-            <div class="b" style="opacity: 1;">
+            <div class="b" :style="searchBarFixed == true ? 'opacity: 0;' :'opacity: 1;'">
                 <p class="u-img">
                     <a href="/member/point">
                         <img src="https://res.vmallres.com/nwap/20181015/staticm/img/personal/defaultface_user_after.png"> <!---->
@@ -420,7 +442,10 @@ import axios from "axios"
 export default {
     data(){
         return{
-            recommend:[]
+            recommend:[],
+            searchBarFixed:false,
+            login:false,
+            loginName:''
         }
     },
     methods:{
@@ -432,15 +457,38 @@ export default {
             }).catch((result)=>{
                 console.log(result);
             })
+        },
+        handleScroll () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+            if (scrollTop >=1) {
+            this.searchBarFixed = true
+            } else {
+            this.searchBarFixed = false
+            }
+        },
+        ifLogin(){
+            if(localStorage.getItem('loginInfo')){
+                this.loginName=localStorage.getItem('loginInfo');
+                // console.log(localStorage.getItem('loginInfo'))
+                this.login=true;
+            }else{
+                this.login=false;
+            }
         }
     },
     mounted(){
+        window.addEventListener('scroll', this.handleScroll);
         this.getRecommend();
+        this.ifLogin();
     }
 }
 </script>
 
 <style>
+address, caption, cite, code, dfn, em, th, var {
+    font-style: normal;
+    font-weight: 400;
+}
 .userinfo {
     height: 4.25rem;
     background-color: #fff;
@@ -506,6 +554,105 @@ export default {
     display: inline-block;
     background: url('../../static/hw/my-arrow.png') no-repeat center;
     background-size: 0.6rem 0.6rem;
+}
+.userinfo .u-accounts {
+    vertical-align: middle;
+    padding: 0.25rem 0;
+}
+.userinfo .u-accounts span {
+    font-size: 0.75rem;
+    color: #ffffff;
+}
+.userinfo .u-accounts .u-auth {
+    opacity: 0.9;
+    color: #fff;
+    font-size: 0.4rem;
+    line-height: 1.7;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0.15rem;
+    padding: 0 0.2rem;
+    margin-left: 0.25rem;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    position: relative;
+    top: -0.15rem;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.userinfo .u-accounts .u-auth em {
+    background: url('../../static/hw/my-arrow.png') no-repeat right center;
+    background-size: 0.25rem 0.25rem;
+    padding-right: 0.3rem;
+}
+.userinfo .u-vip {
+    position: relative;
+    top: -0.2rem;
+}
+.userinfo .u-vip a {
+    position: relative;
+    display: inline-block;
+    height: 0.9rem;
+    border-radius: 0.5rem;
+    background-color: #ffc63c;
+    border-bottom: 0.05rem solid #da9d40;
+    border-top: 0.05rem solid #fbd79e;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.userinfo .u-vip span {
+    font-size: 0.5rem;
+    height: 100%;
+    color: #934200;
+    padding: 0 0.4rem;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+.userinfo .u-vip span .icon-benefit {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    background: url('../../static/hw/quanyi.png') no-repeat;
+    background-size: 0.5rem 0.5rem;
+    margin-right: 0.15rem;
+}
+.userinfo .u-vip span em {
+    max-width: 5rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    padding-top: 0.11rem;
+    -webkit-align-self: center;
+    align-self: center;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+}
+.userinfo .u-accounts .u-img {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: inline-block;
+    margin-right: 0.4rem;
 }
 .userinfo .u-info .shortcut .icon-message {
     background: transparent url('../../static/hw/message.png') scroll no-repeat;
