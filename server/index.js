@@ -10,5 +10,5 @@ app.use(bodyPaeser.urlencoded({extended: false}));
 
 app.use('/api/user',userApi);
 
-app.listen(3000);
-console.log('success listen at port:3000');
+app.listen(6000);
+console.log('success listen at port:6000');

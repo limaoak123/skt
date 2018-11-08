@@ -5,33 +5,37 @@ import Login from '@/views/login/login.vue'
 import register from '@/views/register/register.vue'
 import classify from '@/views/classify/classify.vue'
 
+import NewsGood from '../views/NewsGood.vue'
+import PhoneList from '../views/PhoneList.vue'
 
 Vue.use(Router)
 
-export default new Router({
+var router = new Router({
   routes: [
     {
+      path: '/newsgood',
+      component: NewsGood
+    },
+    {
+      path: '/phonelist',
+      component: PhoneList
+    },
+    {
       path: '/login',
-      name: 'Login',
+      name: 'login',
       component: Login 
     },
     {
       path: '/register',
       name: 'register',
-      component: register 
+      component: register
     },
-    {
-      path: '',
-      name: 'login',
-      component: Login 
-    },
-  
     {
       path: '/classify',
       name: 'classify',
       component: classify
-    },
-
-
+    }
   ]
 })
+
+export default router;

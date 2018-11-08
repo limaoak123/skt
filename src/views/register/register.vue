@@ -20,7 +20,7 @@
             </div>
         </div>
 </template>
-<style>
+<style scoped>
 .register-wrap h3{
         font-size: 18px;
         color: #191919;
