@@ -190,9 +190,9 @@
            }).then((result) => {
                if(result.data.code == 100){
                    console.log(result);
-                   var userInfo = {username:result.data.data.username,password:result.data.data.password}
-                   cookies.set('userInfo',userInfo);
-                   console.log(cookies.get('userInfo'));
+                   var userInfo = result.data.data.username
+                   localStorage.setItem('userInfo',userInfo);
+                   console.log(localStorage.getItem('userInfo'));
                    alert('登录成功');
                }
            })

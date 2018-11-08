@@ -4,7 +4,7 @@
       <div class="head">
           <form>
               <input type="text" placeholder="荣耀8x" />
-              <a><img href="../static/img/message.png" /></a>
+              <a><img src="../../../static/img/message.png" /></a>
           </form>
       </div>
       <nav class="bside">
@@ -210,13 +210,19 @@ export default {
 input::-webkit-input-placeholder{
     font-size: 12px;
     font-weight: 700;
-
+    padding-left: 15px;
 }
 .head{
     background-color: #ffffff; 
     height: 2rem;
     align-items: center;
     margin-top: 0rem; 
+}
+.head img{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 5px;
 }
 .head from{
     left: 100px;
