@@ -57,7 +57,7 @@ router.post('/login',(req,res) => {
       if (result[0]) {
         if (result[0].password == params.password) {
           console.log('登录成功');
-          res.send({ code: 100, msg: '登录成功' });
+          res.send({ code: 100, msg: '登录成功',data:result[0]});
         } else {
           console.log('密码有误，请重新输入');
           res.send({ code: -102, msg: '密码有误，请重新输入' })

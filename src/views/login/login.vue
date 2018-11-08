@@ -170,6 +170,7 @@
 
 <script>
         import axios from 'axios'
+        import cookies from 'vue-cookies'
         // import {setCookie,getCookie} from '../../assets/js/cookie.js'
     export default{
         data () {
@@ -189,6 +190,9 @@
            }).then((result) => {
                if(result.data.code == 100){
                    console.log(result);
+                   var userInfo = {username:result.data.data.username,password:result.data.data.password}
+                   cookies.set('userInfo',userInfo);
+                   console.log(cookies.get('userInfo'));
                    alert('登录成功');
                }
            })
