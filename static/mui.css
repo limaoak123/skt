@@ -1,0 +1,17 @@
+.mui-slider {
+  height: 40px !important;
+  /* padding-top: 40px; */
+  /* position: relative; */
+}
+
+.mui-active {
+  color: #CA141D !important;
+}
+
+.mui-control-item {
+  text-decoration: #cc0e11 !important;
+}
+
+.mui-slider {
+  position: static !important;
+}
