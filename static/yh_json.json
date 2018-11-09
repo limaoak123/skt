@@ -1,0 +1,1339 @@
+[
+    {
+        "id": 1,
+        "name": "为您推荐",
+        "subCategorys": [
+            {
+                "id": 213,
+                "name": "热销推荐",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086983017283.html#10086315919643",
+                        "id": 221,
+                        "name": "荣耀Magic2",
+                        "photoName": "428_428_1540899617711mp.png",
+                        "photoPath": "/product/6901443269754/",
+                        "type": 3,
+                        "value": "10086983017283|2601010077505"
+                    },
+                    {
+                        "categoryUrl": "/product/10086885129494.html#10086511497719",
+                        "id": 223,
+                        "name": "HUAWEI Mate 20",
+                        "photoName": "428_428_1539230426520mp.png",
+                        "photoPath": "/product/6901443260232/",
+                        "type": 3,
+                        "value": "10086885129494|2601010066901"
+                    },
+                    {
+                        "categoryUrl": "/product/10086785341226.html#10086431508342",
+                        "id": 225,
+                        "name": "荣耀10",
+                        "photoName": "428_428_1535358175728mp.jpg",
+                        "photoPath": "/product/6901443232413/",
+                        "type": 3,
+                        "value": "10086785341226|2601010038102"
+                    },
+                    {
+                        "categoryUrl": "/product/10086393052224.html#10086002115494",
+                        "id": 219,
+                        "name": "HUAWEI Mate 20 Pro",
+                        "photoName": "428_428_1539222514790mp.png",
+                        "photoPath": "/product/6901443260225/",
+                        "type": 3,
+                        "value": "10086393052224|2601010067901"
+                    },
+                    {
+                        "categoryUrl": "/product/10086286769025.html#10086339328421",
+                        "id": 217,
+                        "name": "荣耀8X",
+                        "photoName": "428_428_1536628129335mp.jpg",
+                        "photoPath": "/product/6901443261475/",
+                        "type": 3,
+                        "value": "10086286769025|2601010058701"
+                    },
+                    {
+                        "categoryUrl": "/product/10086915330134.html#10086425688564",
+                        "id": 215,
+                        "name": "HUAWEI P20",
+                        "photoName": "428_428_1522652355294mp.jpg",
+                        "photoPath": "/product/6901443223459/",
+                        "type": 3,
+                        "value": "10086915330134|2601010026701"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 227,
+                "name": "超值精选",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086211949427.html#10086058453007",
+                        "id": 235,
+                        "name": "HUAWEI Mate 20 X",
+                        "photoName": "428_428_1539222271816mp.png",
+                        "photoPath": "/product/6901443262182/",
+                        "type": 3,
+                        "value": "10086211949427|2601010067401"
+                    },
+                    {
+                        "categoryUrl": "/product/10086291890006.html#10086565205556",
+                        "id": 233,
+                        "name": "荣耀9i",
+                        "photoName": "428_428_1538987991263mp.png",
+                        "photoPath": "/product/6901443240715/",
+                        "type": 3,
+                        "value": "10086291890006|2601010042602"
+                    },
+                    {
+                        "categoryUrl": "/product/10086316198953.html#10086579327293",
+                        "id": 231,
+                        "name": "HUAWEI 麦芒7",
+                        "photoName": "428_428_1540630588357mp.png",
+                        "photoPath": "/product/6901443257980/",
+                        "type": 3,
+                        "value": "10086316198953|2601010055001"
+                    },
+                    {
+                        "categoryUrl": "/product/10086883263315.html#10086812262517",
+                        "id": 237,
+                        "name": "荣耀畅玩7C",
+                        "photoName": "428_428_1538992869225mp.png",
+                        "photoPath": "/product/6901443218967/",
+                        "type": 3,
+                        "value": "10086883263315|2601010025533"
+                    },
+                    {
+                        "categoryUrl": "/product/10086195106339.html#10086221210400",
+                        "id": 239,
+                        "name": "华为畅享8 Plus ",
+                        "photoName": "428_428_1521296102232mp.jpg",
+                        "photoPath": "/product/6901443224418/",
+                        "type": 3,
+                        "value": "10086195106339|2601010028706"
+                    },
+                    {
+                        "categoryUrl": "/product/10086305784772.html#10086617332760",
+                        "id": 229,
+                        "name": "荣耀 Note10",
+                        "photoName": "428_428_1537234343259mp.jpg",
+                        "photoPath": "/product/6901443253975/",
+                        "type": 3,
+                        "value": "10086305784772|2601010050702"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 285,
+                "name": "移动4G+专区",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/135859985.html#927509148",
+                        "id": 287,
+                        "name": "HUAWEI nova 2s",
+                        "photoName": "428_428_1530668729541mp.jpg",
+                        "photoPath": "/product/6901443211005/",
+                        "type": 3,
+                        "value": "135859985|2601010015409"
+                    },
+                    {
+                        "categoryUrl": "/product/10086612047184.html#10086276179107",
+                        "id": 291,
+                        "name": "荣耀9青春版",
+                        "photoName": "428_428_1520586237115mp.jpg",
+                        "photoPath": "/product/6901443211821/",
+                        "type": 3,
+                        "value": "10086612047184|2601010028301"
+                    },
+                    {
+                        "categoryUrl": "/product/10086580593850.html#10086346014528",
+                        "id": 293,
+                        "name": "荣耀V10",
+                        "photoName": "428_428_1520567761515mp.jpg",
+                        "photoPath": "/product/6901443210138/",
+                        "type": 3,
+                        "value": "10086580593850|2601010028203"
+                    },
+                    {
+                        "categoryUrl": "/product/85827792.html#250638904",
+                        "id": 295,
+                        "name": "荣耀畅玩7X",
+                        "photoName": "428_428_1510904889711mp.jpg",
+                        "photoPath": "/product/6901443206131/",
+                        "type": 3,
+                        "value": "85827792|2601010013105"
+                    },
+                    {
+                        "categoryUrl": "/product/10086733534868.html#10086840957223",
+                        "id": 387,
+                        "name": "华为畅享8",
+                        "photoName": "428_428_1521287060323mp.jpg",
+                        "photoPath": "/product/6901443218622/",
+                        "type": 3,
+                        "value": "10086733534868|2601010028819"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "subCategorys": [
+                    {
+                        "categoryUrl": "https://m.vmall.com/product/guideDetail?param=5&guideType=2",
+                        "id": 203,
+                        "name": "拍照神器",
+                        "photoName": "1500726202455.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 2
+                    },
+                    {
+                        "categoryUrl": "https://m.vmall.com/product/guideDetail?param=7&guideType=2",
+                        "id": 205,
+                        "name": "旗舰机型",
+                        "photoName": "1500726262819.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 2
+                    },
+                    {
+                        "categoryUrl": "https://m.vmall.com/product/guideDetail?param=11&guideType=2",
+                        "id": 207,
+                        "name": "千元机型",
+                        "photoName": "1500726291458.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 2
+                    },
+                    {
+                        "categoryUrl": "https://m.vmall.com/product/guideDetail?param=13&guideType=2",
+                        "id": 209,
+                        "name": "商务机型",
+                        "photoName": "1500726312709.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 2
+                    },
+                    {
+                        "categoryUrl": "https://m.vmall.com/product/guideDetail?param=17&guideType=2",
+                        "id": 211,
+                        "name": "游戏达人",
+                        "photoName": "1500726341314.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 2
+                    }
+                ],
+                "type": 2
+            },
+            {
+                "subCategorys": [
+                    {
+                        "categoryUrl": "https://msale.vmall.com/honor/magic2.html",
+                        "id": 199,
+                        "name": "荣耀",
+                        "photoName": "1540991948336.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 1
+                    },
+                    {
+                        "categoryUrl": "https://msale.vmall.com/hwmate.html",
+                        "id": 201,
+                        "name": "华为",
+                        "photoName": "1540626085347.png",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 1
+                    },
+                    {
+                        "categoryUrl": "https://msale.vmall.com/vmallsmarthome.html",
+                        "id": 629,
+                        "name": "智慧生活馆",
+                        "photoName": "1527668727340.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 1
+                    }
+                ],
+                "type": 1
+            }
+        ]
+    },
+    {
+        "id": 241,
+        "name": "华为手机",
+        "subCategorys": [
+            {
+                "id": 243,
+                "name": "精选手机",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086885129494.html#10086511497719",
+                        "id": 267,
+                        "name": "HUAWEI Mate 20",
+                        "photoName": "428_428_1539230426520mp.png",
+                        "photoPath": "/product/6901443260232/",
+                        "type": 3,
+                        "value": "10086885129494|2601010066901"
+                    },
+                    {
+                        "categoryUrl": "/product/10086393052224.html#10086002115494",
+                        "id": 251,
+                        "name": "HUAWEI Mate 20 Pro",
+                        "photoName": "428_428_1539222514790mp.png",
+                        "photoPath": "/product/6901443260225/",
+                        "type": 3,
+                        "value": "10086393052224|2601010067901"
+                    },
+                    {
+                        "categoryUrl": "/product/10086211949427.html#10086058453007",
+                        "id": 253,
+                        "name": "HUAWEI Mate 20 X",
+                        "photoName": "428_428_1539222271816mp.png",
+                        "photoPath": "/product/6901443262182/",
+                        "type": 3,
+                        "value": "10086211949427|2601010067401"
+                    },
+                    {
+                        "categoryUrl": "/product/10086550008459.html#10086031103555",
+                        "id": 249,
+                        "name": "华为畅享9 Plus",
+                        "photoName": "428_428_1538100198239mp.jpg",
+                        "photoPath": "/product/6901443263752/",
+                        "type": 3,
+                        "value": "10086550008459|2601010061701"
+                    },
+                    {
+                        "categoryUrl": "/product/10086568474763.html#10086795400652",
+                        "id": 247,
+                        "name": "HUAWEI nova 3",
+                        "photoName": "428_428_1531368626642mp.jpg",
+                        "photoPath": "/product/6901443250592/",
+                        "type": 3,
+                        "value": "10086568474763|2601010048803"
+                    },
+                    {
+                        "categoryUrl": "/product/10086915330134.html#10086071672264",
+                        "id": 265,
+                        "name": "HUAWEI P20",
+                        "photoName": "428_428_1522652416476mp.jpg",
+                        "photoPath": "/product/6901443224104/",
+                        "type": 3,
+                        "value": "10086915330134|2601010026709"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 245,
+                "name": "手机分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "285",
+                        "id": 255,
+                        "name": "HUAWEI P系列",
+                        "photoName": "1522200315077.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "285"
+                    },
+                    {
+                        "categoryUrl": "76",
+                        "id": 257,
+                        "name": "HUAWEI Mate系列",
+                        "photoName": "1539770358008.png",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "76"
+                    },
+                    {
+                        "categoryUrl": "277",
+                        "id": 259,
+                        "name": "HUAWEI nova系列",
+                        "photoName": "1522314424430.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "277"
+                    },
+                    {
+                        "categoryUrl": "81",
+                        "id": 261,
+                        "name": "HUAWEI 麦芒系列",
+                        "photoName": "1536722896777.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "81"
+                    },
+                    {
+                        "categoryUrl": "275",
+                        "id": 263,
+                        "name": "华为畅享系列",
+                        "photoName": "1522307142377.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "275"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "荣耀手机",
+        "subCategorys": [
+            {
+                "id": 45,
+                "name": "精选手机",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086983017283.html#10086315919643",
+                        "id": 269,
+                        "name": "荣耀Magic2",
+                        "photoName": "428_428_1540899617711mp.png",
+                        "photoPath": "/product/6901443269754/",
+                        "type": 3,
+                        "value": "10086983017283|2601010077505"
+                    },
+                    {
+                        "categoryUrl": "/product/10086785341226.html#10086431508342",
+                        "id": 385,
+                        "name": "荣耀10",
+                        "photoName": "428_428_1535358175728mp.jpg",
+                        "photoPath": "/product/6901443232413/",
+                        "type": 3,
+                        "value": "10086785341226|2601010038102"
+                    },
+                    {
+                        "categoryUrl": "/product/10086286769025.html#10086339328421",
+                        "id": 57,
+                        "name": "荣耀8X",
+                        "photoName": "428_428_1536628129335mp.jpg",
+                        "photoPath": "/product/6901443261475/",
+                        "type": 3,
+                        "value": "10086286769025|2601010058701"
+                    },
+                    {
+                        "categoryUrl": "/product/10086291890006.html#10086671638910",
+                        "id": 49,
+                        "name": "荣耀9i ",
+                        "photoName": "428_428_1538987967606mp.png",
+                        "photoPath": "/product/6901443240708/",
+                        "type": 3,
+                        "value": "10086291890006|2601010042601"
+                    },
+                    {
+                        "categoryUrl": "/product/570379791.html#909703834",
+                        "id": 271,
+                        "name": "荣耀V10",
+                        "photoName": "428_428_1511747458684mp.jpg",
+                        "photoPath": "/product/6901443210237/",
+                        "type": 3,
+                        "value": "570379791|2601010014007"
+                    },
+                    {
+                        "categoryUrl": "/product/10086576787089.html#10086729542271",
+                        "id": 53,
+                        "name": "荣耀Play",
+                        "photoName": "428_428_1538990348054mp.png",
+                        "photoPath": "/product/6901443242658/",
+                        "type": 3,
+                        "value": "10086576787089|2601010042502"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 47,
+                "name": "手机分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "75",
+                        "id": 61,
+                        "name": "荣耀系列",
+                        "photoName": "1541065472948.png",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "75"
+                    },
+                    {
+                        "categoryUrl": "77",
+                        "id": 65,
+                        "name": "荣耀畅玩系列",
+                        "photoName": "1539593385317.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "77"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "笔记本&平板",
+        "subCategorys": [
+            {
+                "id": 75,
+                "name": "精选笔记本",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086000689735.html#10086514290855",
+                        "id": 87,
+                        "name": "HUAWEI MateBook X Pro",
+                        "photoName": "428_428_1539915415114mp.png",
+                        "photoPath": "/product/6901443227792/",
+                        "type": 3,
+                        "value": "10086000689735|2801010001803"
+                    },
+                    {
+                        "categoryUrl": "/product/10086350349834.html#10086165908070",
+                        "id": 83,
+                        "name": "荣耀MagicBook",
+                        "photoName": "428_428_1538989328772mp.png",
+                        "photoPath": "/product/6901443233212/",
+                        "type": 3,
+                        "value": "10086350349834|2801010002403"
+                    },
+                    {
+                        "categoryUrl": "/product/21046116.html#882934630",
+                        "id": 85,
+                        "name": "HUAWEI MateBook D",
+                        "photoName": "428_428_1495006446190mp.jpg",
+                        "photoPath": "/product/6901443184262/",
+                        "type": 3,
+                        "value": "21046116|2101010000401"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 79,
+                "name": "精选平板",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086893318670.html#10086612323957",
+                        "id": 89,
+                        "name": "华为平板 M5 青春版 10.1英寸",
+                        "photoName": "428_428_1540546716433mp.png",
+                        "photoPath": "/product/2701010008503/",
+                        "type": 3,
+                        "value": "10086893318670|2701010008503"
+                    },
+                    {
+                        "categoryUrl": "/product/10086527872485.html#10086466203116",
+                        "id": 93,
+                        "name": "荣耀平板5",
+                        "photoName": "428_428_1539243364035mp.png",
+                        "photoPath": "/product/6901443265206/",
+                        "type": 3,
+                        "value": "10086527872485|2701010007702"
+                    },
+                    {
+                        "categoryUrl": "/product/10086749611489.html#10086567817541",
+                        "id": 281,
+                        "name": "华为畅享平板 10.1英寸",
+                        "photoName": "428_428_1539854934680mp.png",
+                        "photoPath": "/product/6901443267514/",
+                        "type": 3,
+                        "value": "10086749611489|2701010008402"
+                    },
+                    {
+                        "categoryUrl": "/product/516255415.html#553104015",
+                        "id": 91,
+                        "name": "荣耀Waterplay",
+                        "photoName": "428_428_1506671611280mp.jpg",
+                        "photoPath": "/product/6901443204526/",
+                        "type": 3,
+                        "value": "516255415|2701010000801"
+                    },
+                    {
+                        "categoryUrl": "/product/10086868573443.html#10086385882893",
+                        "id": 277,
+                        "name": "华为平板 M5 10.8英寸",
+                        "photoName": "428_428_1531379309228mp.jpg",
+                        "photoPath": "/product/6901443223138/",
+                        "type": 3,
+                        "value": "10086868573443|2701010004201"
+                    },
+                    {
+                        "categoryUrl": "/product/405225095.html#852174199",
+                        "id": 279,
+                        "name": "荣耀畅玩平板2 9.6英寸",
+                        "photoName": "428_428_1539913537863mp.png",
+                        "photoPath": "/product/6901443192458/",
+                        "type": 3,
+                        "value": "405225095|1201010004504"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 81,
+                "name": "笔记本&平板分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "41",
+                        "id": 95,
+                        "name": "平板电脑",
+                        "photoName": "1500716674404.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "41"
+                    },
+                    {
+                        "categoryUrl": "42",
+                        "id": 97,
+                        "name": "笔记本电脑",
+                        "photoName": "1500716688182.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "42"
+                    },
+                    {
+                        "categoryUrl": "317",
+                        "id": 99,
+                        "name": "笔记本配件",
+                        "photoName": "1500716702627.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "317"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "智能穿戴",
+        "subCategorys": [
+            {
+                "id": 101,
+                "name": "精选智能穿戴",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086653392602.html#10086354651877",
+                        "id": 105,
+                        "name": "华为儿童手表 3 Pro",
+                        "photoName": "428_428_1540802092955mp.png",
+                        "photoPath": "/product/2901010003801/",
+                        "type": 3,
+                        "value": "10086653392602|2901010003801"
+                    },
+                    {
+                        "categoryUrl": "/product/10086686072684.html#10086455419044",
+                        "id": 111,
+                        "name": "荣耀手环4 标准版",
+                        "photoName": "428_428_1540628828647mp.png",
+                        "photoPath": "/product/6901443262472/",
+                        "type": 3,
+                        "value": "10086686072684|2901020005601"
+                    },
+                    {
+                        "categoryUrl": "/product/10086572258093.html#10086972979696",
+                        "id": 109,
+                        "name": "华为手环 B5",
+                        "photoName": "428_428_1539569436793mp.png",
+                        "photoPath": "/product/6901443239160/",
+                        "type": 3,
+                        "value": "10086572258093|2901020004607"
+                    },
+                    {
+                        "categoryUrl": "/product/993405255.html#419942774",
+                        "id": 107,
+                        "name": "荣耀手环3",
+                        "photoName": "428_428_1538991695890mp.png",
+                        "photoPath": "/product/6901443183524/",
+                        "type": 3,
+                        "value": "993405255|2202010000401"
+                    },
+                    {
+                        "categoryUrl": "/product/270976970.html#976288056",
+                        "id": 113,
+                        "name": "HUAWEI WATCH 2 Pro",
+                        "photoName": "428_428_1507769117117mp.jpg",
+                        "photoPath": "/product/6901443204212/",
+                        "type": 3,
+                        "value": "270976970|2901010000201"
+                    },
+                    {
+                        "categoryUrl": "/product/10086913521308.html#10086949141018",
+                        "id": 115,
+                        "name": "荣耀手环4 Running版",
+                        "photoName": "428_428_1536202224705mp.jpg",
+                        "photoPath": "/product/6901443262977/",
+                        "type": 3,
+                        "value": "10086913521308|2901020005801"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 103,
+                "name": "智能穿戴分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "241",
+                        "id": 117,
+                        "name": "手环",
+                        "photoName": "1503989859376.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "241"
+                    },
+                    {
+                        "categoryUrl": "247",
+                        "id": 119,
+                        "name": "手表",
+                        "photoName": "1500717013538.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "247"
+                    },
+                    {
+                        "categoryUrl": "329",
+                        "id": 299,
+                        "name": "VR",
+                        "photoName": "1516844622106.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "329"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "name": "智能家居",
+        "subCategorys": [
+            {
+                "id": 121,
+                "name": "精选智能家居",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086423109158.html#10086794601109",
+                        "id": 127,
+                        "name": "华为AI音箱",
+                        "photoName": "428_428_1541082677954mp.png",
+                        "photoPath": "/product/6901443266425/",
+                        "type": 3,
+                        "value": "10086423109158|3102060003501"
+                    },
+                    {
+                        "categoryUrl": "/product/10086007028117.html#10086094709326",
+                        "id": 133,
+                        "name": "荣耀路由 X2",
+                        "photoName": "428_428_1539912533064mp.png",
+                        "photoPath": "/product/6901443258871/",
+                        "type": 3,
+                        "value": "10086007028117|3001010010301"
+                    },
+                    {
+                        "categoryUrl": "/product/10086500145070.html#10086061866500",
+                        "id": 125,
+                        "name": "华为子母路由 Q2",
+                        "photoName": "428_428_1521184530843mp.jpg",
+                        "photoPath": "/product/6901443219940/",
+                        "type": 3,
+                        "value": "10086500145070|3001010003402"
+                    },
+                    {
+                        "categoryUrl": "/product/10086958063836.html#10086943604110",
+                        "id": 731,
+                        "name": "荣耀路由2S",
+                        "photoName": "428_428_1534918214626mp.jpg",
+                        "photoPath": "/product/6901443257485/",
+                        "type": 3,
+                        "value": "10086958063836|3001010008801"
+                    },
+                    {
+                        "categoryUrl": "/product/23860218.html#136877951",
+                        "id": 129,
+                        "name": "荣耀路由X1 增强版",
+                        "photoName": "428_428_1538985163609mp.png",
+                        "photoPath": "/product/6901443181803/",
+                        "type": 3,
+                        "value": "23860218|1104010004402"
+                    },
+                    {
+                        "categoryUrl": "/product/190355030.html#10904718",
+                        "id": 131,
+                        "name": "华为路由 A1 畅享版",
+                        "photoName": "428_428_1492767526549mp.jpg",
+                        "photoPath": "/product/6901443169702/",
+                        "type": 3,
+                        "value": "190355030|1104010004301"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 123,
+                "name": "智能家居分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "45",
+                        "id": 141,
+                        "name": "路由器",
+                        "photoName": "1527753308524.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "45"
+                    },
+                    {
+                        "categoryUrl": "263",
+                        "id": 137,
+                        "name": "子母/分布式路由",
+                        "photoName": "1500717371446.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "263"
+                    },
+                    {
+                        "categoryUrl": "44",
+                        "id": 143,
+                        "name": "电力猫/wifi放大器",
+                        "photoName": "1500717426499.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "44"
+                    },
+                    {
+                        "categoryUrl": "97",
+                        "id": 145,
+                        "name": "随行wifi",
+                        "photoName": "1500717445480.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "97"
+                    },
+                    {
+                        "categoryUrl": "46",
+                        "id": 139,
+                        "name": "电视盒子",
+                        "photoName": "1516593258642.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "46"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "name": "专属配件",
+        "subCategorys": [
+            {
+                "id": 369,
+                "name": "精选专属配件",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086366473453.html#10086512383861",
+                        "id": 377,
+                        "name": "HUAWEI Mate 20 Pro 硅胶保护壳",
+                        "photoName": "428_428_1539248897253mp.png",
+                        "photoPath": "/product/6901443252275/",
+                        "type": 3,
+                        "value": "10086366473453|3101010018202"
+                    },
+                    {
+                        "categoryUrl": "/product/862627470.html#177748386",
+                        "id": 371,
+                        "name": "荣耀V10 PU磁吸保护套",
+                        "photoName": "428_428_1512723194616mp.jpg",
+                        "photoPath": "/product/6901443208760/",
+                        "type": 3,
+                        "value": "862627470|3101020001001"
+                    },
+                    {
+                        "categoryUrl": "/product/10086349114241.html#10086288019034",
+                        "id": 373,
+                        "name": "HUAWEI P20智能视窗保护套",
+                        "photoName": "428_428_1522229463300mp.jpg",
+                        "photoPath": "/product/6901443214075/",
+                        "type": 3,
+                        "value": "10086349114241|3101020002303"
+                    },
+                    {
+                        "categoryUrl": "/product/10086121296044.html#10086273209340",
+                        "id": 381,
+                        "name": "荣耀平板5 屏幕保护膜",
+                        "photoName": "428_428_1538205297131mp.jpg",
+                        "photoPath": "/product/6901443250332/",
+                        "type": 3,
+                        "value": "10086121296044|3101030002801"
+                    },
+                    {
+                        "categoryUrl": "/product/10086974424499.html#10086229642128",
+                        "id": 379,
+                        "name": "HUAWEI P20 Pro 星钻保护壳",
+                        "photoName": "428_428_1535945798308mp.jpg",
+                        "photoPath": "/product/6901443231881/",
+                        "type": 3,
+                        "value": "10086974424499|3101010014501"
+                    },
+                    {
+                        "categoryUrl": "/product/100667556.html#249481832",
+                        "id": 375,
+                        "name": "HUAWEI WATCH 2 表带",
+                        "photoName": "428_428_1515374504627mp.jpg",
+                        "photoPath": "/product/GB3101040001201/",
+                        "type": 3,
+                        "value": "100667556|3101040001201"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 149,
+                "name": "专属配件分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "48",
+                        "id": 151,
+                        "name": "保护壳",
+                        "photoName": "1540607847559.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "48"
+                    },
+                    {
+                        "categoryUrl": "49",
+                        "id": 153,
+                        "name": "保护套",
+                        "photoName": "1540607817580.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "49"
+                    },
+                    {
+                        "categoryUrl": "50",
+                        "id": 155,
+                        "name": "贴膜",
+                        "photoName": "1511940620204.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "50"
+                    },
+                    {
+                        "categoryUrl": "223",
+                        "id": 157,
+                        "name": "盒子专属配件",
+                        "photoName": "1500717572048.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "223"
+                    },
+                    {
+                        "categoryUrl": "225",
+                        "id": 159,
+                        "name": "表带",
+                        "photoName": "1523171345598.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "225"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "name": "通用配件",
+        "subCategorys": [
+            {
+                "id": 161,
+                "name": "精选配件",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086335437779.html#10086738650172",
+                        "id": 195,
+                        "name": "荣耀FlyPods无线耳机",
+                        "photoName": "428_428_1541468681430mp.png",
+                        "photoPath": "/product/3102050007101/",
+                        "type": 3,
+                        "value": "10086335437779|3102050007101"
+                    },
+                    {
+                        "categoryUrl": "/product/936223974.html#534967719",
+                        "id": 185,
+                        "name": "华为智能体脂秤",
+                        "photoName": "428_428_1512699241768mp.jpg",
+                        "photoPath": "/product/6901443207077/",
+                        "type": 3,
+                        "value": "936223974|3102150005801"
+                    },
+                    {
+                        "categoryUrl": "/product/875753311.html#189161731",
+                        "id": 191,
+                        "name": "荣耀xSport 运动蓝牙耳机",
+                        "photoName": "428_428_1489548822739mp.jpg",
+                        "photoPath": "/product/6901443174256/",
+                        "type": 3,
+                        "value": "875753311|1303030003602"
+                    },
+                    {
+                        "categoryUrl": "/product/19037861.html#10086348424479",
+                        "id": 189,
+                        "name": "华为移动电源",
+                        "photoName": "428_428_1526542342890mp.jpg",
+                        "photoPath": "/product/6901443201099/",
+                        "type": 3,
+                        "value": "19037861|3102010000204"
+                    },
+                    {
+                        "categoryUrl": "/product/944393591.html#594387586",
+                        "id": 187,
+                        "name": "华为车载快速充电器",
+                        "photoName": "428_428_1534230935722mp.jpg",
+                        "photoPath": "/product/6901443155439/",
+                        "type": 3,
+                        "value": "944393591|1302010000601"
+                    },
+                    {
+                        "categoryUrl": "/product/194128141.html#553811697",
+                        "id": 193,
+                        "name": "荣耀体脂秤",
+                        "photoName": "428_428_1538985401864mp.png",
+                        "photoPath": "/product/6901443173129/",
+                        "type": 3,
+                        "value": "194128141|1304080001401"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 163,
+                "name": "通用配件分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "56",
+                        "id": 165,
+                        "name": "移动电源",
+                        "photoName": "1500717632625.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "56"
+                    },
+                    {
+                        "categoryUrl": "229",
+                        "id": 167,
+                        "name": "耳机",
+                        "photoName": "1500717645088.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "229"
+                    },
+                    {
+                        "categoryUrl": "58",
+                        "id": 169,
+                        "name": "充电器/线材",
+                        "photoName": "1500717672494.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "58"
+                    },
+                    {
+                        "categoryUrl": "231",
+                        "id": 171,
+                        "name": "自拍杆/支架",
+                        "photoName": "1500717724267.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "231"
+                    },
+                    {
+                        "categoryUrl": "55",
+                        "id": 173,
+                        "name": "音箱",
+                        "photoName": "1500717750877.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "55"
+                    },
+                    {
+                        "categoryUrl": "83",
+                        "id": 175,
+                        "name": "U盘/存储卡",
+                        "photoName": "1540606483683.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "83"
+                    },
+                    {
+                        "categoryUrl": "235",
+                        "id": 179,
+                        "name": "摄像机/镜头",
+                        "photoName": "1510221193787.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "235"
+                    },
+                    {
+                        "categoryUrl": "239",
+                        "id": 181,
+                        "name": "智能硬件",
+                        "photoName": "1512641984553.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "239"
+                    },
+                    {
+                        "categoryUrl": "237",
+                        "id": 183,
+                        "name": "生活周边",
+                        "photoName": "1500717893806.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "237"
+                    },
+                    {
+                        "categoryUrl": "568",
+                        "id": 744,
+                        "name": "取卡针",
+                        "photoName": "1540966867912.png",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "568"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 301,
+        "name": "生态产品",
+        "subCategorys": [
+            {
+                "id": 303,
+                "name": "精选智能产品",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086203472371.html#10086231514149",
+                        "id": 719,
+                        "name": "华为智选读写台灯",
+                        "photoName": "428_428_1540952549939mp.png",
+                        "photoPath": "/product/GB3102150039901/",
+                        "type": 3,
+                        "value": "10086203472371|3102150044501"
+                    },
+                    {
+                        "categoryUrl": "/product/10086833471847.html#10086066461369",
+                        "id": 327,
+                        "name": "海雀智能摄像头H1",
+                        "photoName": "428_428_1533115905113mp.jpg",
+                        "photoPath": "/product/GB3102150043501/",
+                        "type": 3,
+                        "value": "10086833471847|3102150043501"
+                    },
+                    {
+                        "categoryUrl": "/product/10086045171328.html#10086749233933",
+                        "id": 331,
+                        "name": "55度智能降温杯",
+                        "photoName": "428_428_1534841562567mp.jpg",
+                        "photoPath": "/product/GB3102160013001/",
+                        "type": 3,
+                        "value": "10086045171328|3102160013001"
+                    },
+                    {
+                        "categoryUrl": "/product/10086131105122.html#10086093541040",
+                        "id": 732,
+                        "name": "720全智能净化器EP800",
+                        "photoName": "428_428_1541384173215mp.png",
+                        "photoPath": "/product/GB3102150006001/",
+                        "type": 3,
+                        "value": "10086131105122|3102150018801"
+                    },
+                    {
+                        "categoryUrl": "/product/10086132466242.html#10086361738676",
+                        "id": 325,
+                        "name": "科沃斯扫地机器人D36F",
+                        "photoName": "428_428_1521603037469mp.jpg",
+                        "photoPath": "/product/GB3102150001201/",
+                        "type": 3,
+                        "value": "10086132466242|3102150019601"
+                    },
+                    {
+                        "categoryUrl": "/product/10086541811502.html#10086705859297",
+                        "id": 723,
+                        "name": "极米无屏电视Z6X",
+                        "photoName": "428_428_1539572631283mp.png",
+                        "photoPath": "/product/GB3102150042701/",
+                        "type": 3,
+                        "value": "10086541811502|3102150042701"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "id": 313,
+                "name": "生态产品分类",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "371",
+                        "id": 315,
+                        "name": "照明",
+                        "photoName": "1520582668647.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "371"
+                    },
+                    {
+                        "categoryUrl": "421",
+                        "id": 395,
+                        "name": "清洁",
+                        "photoName": "1525772175202.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "421"
+                    },
+                    {
+                        "categoryUrl": "423",
+                        "id": 397,
+                        "name": "节能",
+                        "photoName": "1532071108316.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "423"
+                    },
+                    {
+                        "categoryUrl": "373",
+                        "id": 343,
+                        "name": "环境",
+                        "photoName": "1541065506702.png",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "373"
+                    },
+                    {
+                        "categoryUrl": "379",
+                        "id": 349,
+                        "name": "安防",
+                        "photoName": "1541386227925.png",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "379"
+                    },
+                    {
+                        "categoryUrl": "403",
+                        "id": 389,
+                        "name": "健康",
+                        "photoName": "1541386135905.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "403"
+                    },
+                    {
+                        "categoryUrl": "377",
+                        "id": 347,
+                        "name": "厨电",
+                        "photoName": "1534142703813.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "377"
+                    },
+                    {
+                        "categoryUrl": "407",
+                        "id": 391,
+                        "name": "影音",
+                        "photoName": "1532070938839.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "407"
+                    },
+                    {
+                        "categoryUrl": "375",
+                        "id": 345,
+                        "name": "卫浴",
+                        "photoName": "1525772203363.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "375"
+                    },
+                    {
+                        "categoryUrl": "381",
+                        "id": 351,
+                        "name": "其他",
+                        "photoName": "1530670587228.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 4,
+                        "value": "381"
+                    }
+                ],
+                "type": 4
+            }
+        ]
+    },
+    {
+        "id": 353,
+        "name": "增值服务",
+        "subCategorys": [
+            {
+                "id": 363,
+                "name": "礼品包装精选商品",
+                "subCategorys": [
+                    {
+                        "categoryUrl": "/product/10086915330134.html#10086100716467",
+                        "id": 669,
+                        "name": "HUAWEI P20",
+                        "photoName": "428_428_1525340794041mp.jpg",
+                        "photoPath": "/product/6901443237784/",
+                        "type": 3,
+                        "value": "10086915330134|2601010026714"
+                    },
+                    {
+                        "categoryUrl": "/product/10086471194207.html#10086994950476",
+                        "id": 671,
+                        "name": "HUAWEI P20 Pro",
+                        "photoName": "428_428_1522651164449mp.jpg",
+                        "photoPath": "/product/6901443224098/",
+                        "type": 3,
+                        "value": "10086471194207|2601010026806"
+                    },
+                    {
+                        "categoryUrl": "/product/396602535.html#894429566",
+                        "id": 365,
+                        "name": "HUAWEI Mate 10",
+                        "photoName": "428_428_1539940869900mp.png",
+                        "photoPath": "/product/6901443201990/",
+                        "type": 3,
+                        "value": "396602535|2601010007207"
+                    },
+                    {
+                        "categoryUrl": "/product/357339492.html#120151168",
+                        "id": 367,
+                        "name": "HUAWEI Mate 10 Pro",
+                        "photoName": "428_428_1518318882828mp.jpg",
+                        "photoPath": "/product/2601010009803/",
+                        "type": 3,
+                        "value": "357339492|2601010009803"
+                    }
+                ],
+                "type": 3
+            },
+            {
+                "subCategorys": [
+                    {
+                        "categoryUrl": "https://coop.aihuishou.com/huawei?app=false",
+                        "id": 357,
+                        "name": "以旧换新",
+                        "photoName": "1522831589734.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 1
+                    },
+                    {
+                        "categoryUrl": "https://m.vmall.com/product/10086344499475.html#10086230774569",
+                        "id": 361,
+                        "name": "礼品包装",
+                        "photoName": "1522831666286.jpg",
+                        "photoPath": "/common/mobile/frontCategory/",
+                        "type": 1
+                    }
+                ],
+                "type": 1
+            }
+        ]
+    }
+]

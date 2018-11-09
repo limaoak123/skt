@@ -1,0 +1,82 @@
+[
+	{	
+		"sid":"001",
+        "src":"b1.jpg",
+        "tit":"荣耀V10",
+        "txt":"限时直降700元",
+        "price":"2099",
+        "oldprice":"￥2700"
+	},
+	{	
+		"sid":"002",
+        "src":"b2.png",
+        "tit":"HUAWEI Mate 20 Pro",
+        "txt": "",
+        "price":"5399",
+        "oldprice":""		
+	},
+	{
+		"sid":"003",
+        "src":"b3.png",
+        "tit":"HUAWEI nova 3",
+        "txt": "",
+        "price":"2799",
+        "oldprice":""
+	},
+	{	
+		"sid":"004",
+		"src":"b4.png",
+		"tit":"HUAWEI Mate 20",
+        "txt": "",
+        "price":"3999",
+        "oldprice":""	
+    },
+    {	
+		"sid":"001",
+        "src":"b5.png",
+        "tit":"HUAWEI Mate 20 X",
+        "txt": "",
+        "price":"4999",
+        "oldprice":""
+	},
+	{	
+		"sid":"002",
+        "src":"b6.png",
+        "tit":"荣耀畅玩8C",
+        "txt": "直降400",
+        "price":"1099",
+        "oldprice":"￥1499"			
+	},
+	{
+		"sid":"003",
+        "src":"b7.png",
+        "tit":"荣耀Magic2",
+        "txt": "",
+        "price":"4299",
+        "oldprice":""
+	},
+	{	
+		"sid":"004",
+		"src":"b8.png",
+		"tit":"HUAWEI麦芒7",
+        "txt": "",
+        "price":"2399",
+        "oldprice":""		
+	},
+	{	
+		"sid":"001",
+        "src":"b9.png",
+        "tit":"荣耀8X",
+        "txt": "",
+        "price":"1399",
+        "oldprice":""	
+	},
+	{	
+		"sid":"002",
+        "src":"b10.jpg",
+        "tit":"荣耀8X Max",
+        "txt": "",
+        "price":"1499",
+        "oldprice":""		
+	}
+]

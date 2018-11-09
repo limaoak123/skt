@@ -71,6 +71,8 @@
       </div>
     </div>
     <!-- logging status END -->
+    <div style="height:6rem;"></div>
+    <tableCar></tableCar>
   </div>
 
 </template>
@@ -79,8 +81,13 @@
 
 <script>
   import axios from 'axios';
+  import tableCar from "./home/table-car.vue";
   export default {
+    components: {
+      tableCar
+    },
     data(){
+
       return{
         dl:'https://bird.ioliu.cn/v1/?url=',
         url:'https://openapi.vmall.com/mcp/cart/queryEptCartRecommendPrds?portal=2&lang=zh-CN&country=CN&callback=__jp3',
@@ -151,6 +158,7 @@
         this.prdList = this.prdList.filter(function (item) {
           return !item.select
         });
+        location.reload();
         this.getTotal()
       },
 
@@ -487,7 +495,7 @@
     }
     .pay{
       position: fixed;
-      bottom: 2.6rem;
+      bottom: 2.32rem;
       width: 100%;
       background: #fff;
       padding-left: .8rem;

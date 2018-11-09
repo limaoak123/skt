@@ -243,6 +243,7 @@
             // console.log(allInfoJson[0].prdid)
             for (var i = 0; i < allInfoJson.length; i++) {
               if((allInfoJson[i].prdid == this.prdid) || (allInfoJson[i].skuId == this.skuId)){
+               
                 allInfoJson[i].count+=1;
                 flag = false;
               }
