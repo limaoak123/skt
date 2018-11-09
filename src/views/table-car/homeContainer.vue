@@ -446,7 +446,7 @@ export default {
           var homePhone = JSON.parse(str);
           console.log(homePhone);
           if (homePhone.code == 0) {
-            this.homePhoneList = homePhone.homeRegionInfos[9].showPrdList;
+            this.homePhoneList = homePhone.homeRegionInfos[10].showPrdList;
             this.recommendList = homePhone.homeRegionInfos[1].showPrdList;
           }
           // this.homePhone = homePhone;
@@ -463,6 +463,7 @@ export default {
         .then(result => {
           var himg = result.data.split("querySquaredInfo(")[1].split(");")[0];
           var homeImg = JSON.parse(himg);
+          // console.log(homeImg)
           // console.log(JSON.parse(himg));
           // console.log(homeImg.code);
           if (homeImg.code == 0) {
