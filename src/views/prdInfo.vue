@@ -109,6 +109,7 @@
 
 <script>
   import axios from 'axios';
+  
   export default {
     data(){
         return{
@@ -174,8 +175,10 @@
     },
 
     created(){
+
       this.getInfo();
       this.prdid = location.hash.split('?')[1];
+      
       // alert(this.prdid)
       
     },
@@ -199,7 +202,7 @@
                   this.prdprice = this.oneInfo.prdCurrentPrice;
                   this.skuId = this.oneInfo.skuId;
                   this.imgurl = 'https://res.vmallres.com/pimages/'+ this.oneInfo.prdAllPicUrl.mainPic.path + '/428_428_' + this.oneInfo.prdAllPicUrl.mainPic.name;
-                  console.log(this.oneInfo)
+                  // console.log(this.oneInfo)
                   return;
                 }
               }
@@ -240,10 +243,6 @@
             // console.log(allInfoJson[0].prdid)
             for (var i = 0; i < allInfoJson.length; i++) {
               if((allInfoJson[i].prdid == this.prdid) || (allInfoJson[i].skuId == this.skuId)){
-                console.log(allInfoJson[i].prdid);
-                console.log(this.prdid);
-                console.log(this.prdid);
-                console.log(this.prdid);
                 allInfoJson[i].count+=1;
                 flag = false;
               }
@@ -285,10 +284,11 @@
 
 
 <style lang="scss">
-  *{
-    padding: 0;
-    margin: 0;
-  }
+@import url(https://res8.vmallres.com/shopdc/cdn/modules/common/mb/css/common.css?v=20181106000017);
+  // *{
+  //   padding: 0;
+  //   margin: 0;
+  // }
   a{
     text-decoration: none;
   }

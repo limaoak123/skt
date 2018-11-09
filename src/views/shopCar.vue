@@ -240,10 +240,11 @@
 
 
 <style lang="scss">
-  *{
-    padding: 0;
-    margin: 0;
-  }
+@import url(https://res8.vmallres.com/shopdc/cdn/modules/common/mb/css/common.css?v=20181106000017);
+  // *{
+  //   padding: 0;
+  //   margin: 0;
+  // }
   a{
     text-decoration: none;
   }
