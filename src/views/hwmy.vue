@@ -484,7 +484,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+  @import url(https://res8.vmallres.com/shopdc/cdn/modules/common/mb/css/common.css?v=20181106000017);
+
 address, caption, cite, code, dfn, em, th, var {
     font-style: normal;
     font-weight: 400;
