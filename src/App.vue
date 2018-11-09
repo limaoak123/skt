@@ -77,6 +77,13 @@
 
 </template>
 
+
+
+<style scoped>
+  @import '../static/reset.css';
+</style>
+
+
 <script>
 import Rem from "./assets/js/rem.js";
 new Rem();

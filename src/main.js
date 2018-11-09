@@ -12,6 +12,7 @@ import './lib/js/mui.js'
 import './lib/css/icons-extra.css'
 import '../static/mui.css'
 
+
 Vue.use(MintUI);
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
@@ -26,6 +27,8 @@ Vue.filter('dateFormat', function (dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
   return moment(dataStr).format(pattern)
 })
 Vue.config.productionTip = false
+Vue.config.productionTip = false;
+
 
 /* eslint-disable no-new */
 new Vue({
