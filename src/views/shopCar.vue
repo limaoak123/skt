@@ -2,7 +2,7 @@
 
   <div id="shopcar">
     <!-- Unproducts status  START -->
-    <div id="unloggend" v-if="!localStorage">
+    <div id="unloggend" v-if="!name">
       <span class="tit">购物车</span>
       <div id="noproduct">
         <p>购物车中还没有商品，赶紧选购吧！</p>
@@ -37,14 +37,14 @@
             @click.prevent="" @click="selectOne(item)" :checked="item.select">
             <div class="right">
               <a href="">
-                <img src="https://res.vmallres.com/pimages/product/6901443260232/428_428_1539230426520mp.png" >
-                <p>HUAWEI Mate 20 6GB+64GB 全网通版（亮黑色）</p>
+                <img :src="item.imgurl" >
+                <p>{{ item.prdtit }} {{ item.brand }} {{ item.color }}</p>
               </a>
-              <span class="money">￥ 3999</span>
+              <span class="money">￥ {{ item.prdprice }}</span>
               <div class="fix">
-                <span class="fixminus" @click="item.count--">-</span>
+                <span class="fixminus" @click="item.count--,tolocal()">-</span>
                 <span class="num">{{ item.count =(item.count == 0 ? 1:item.count) }}</span>
-                <span class="fixadd" @click="item.count++">+</span>
+                <span class="fixadd" @click="item.count++,tolocal()">+</span>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@
         <i>总计:</i>
         <span class="allmoney">￥ {{ totalPrice }}.00</span>
         <a v-if="!fix">结算({{ totalNum }})</a>
-        <a v-else @click="deletePrd(),selectAll()">删除</a>
+        <a v-else @click="deletePrd(),selectAll(),tolocal()">删除</a>
       </div>
     </div>
     <!-- logging status END -->
@@ -86,6 +86,7 @@
         url:'https://openapi.vmall.com/mcp/cart/queryEptCartRecommendPrds?portal=2&lang=zh-CN&country=CN&callback=__jp3',
         prdInfo:[],
         localStorage,
+        name,
         fix:false,
         select:true,
         isAll:false,
@@ -95,7 +96,8 @@
       }
     },
     created(){
-      this.getLocalstroage()
+      // this.getLocalstroage()
+      this.getCarList();
     },
     methods:{
       getlist () {
@@ -165,10 +167,46 @@
         this.totalPrice = totalPrice
       },
 
-      getLocalstroage(){
-        if(this.localStorage){
-          this.prdList = JSON.parse(localStorage.getItem('111Info'))
-          // console.log(this.prdList)
+      //修改localstroage
+      tolocal(){
+        var name = localStorage.username;
+        // var carInfo = JSON.parse(localStorage.getItem(name +'allInfo'));
+
+        var newInfo =[];
+        var _proList = this.prdList.filter((el) =>{
+          return el.select
+        });
+
+        for(var i = 0, len = _proList.length; i < len; i++) {
+          var obj = {
+            "prdid":_proList[i].prdid,
+            "count":_proList[i].count,
+            "brand":_proList[i].brand,
+            "color":_proList[i].color,
+            "prdtit":_proList[i].prdtit,
+            "imgurl":_proList[i].imgurl,
+            "prdprice":_proList[i].prdprice
+          };
+          newInfo.push(obj);
+        }
+        var json = JSON.stringify(newInfo);
+        localStorage.setItem(name +"allInfo",json);
+        
+      },
+
+      // getLocalstroage(){
+      //   if(this.localStorage){
+      //     this.prdList = JSON.parse(localStorage.getItem('111Info'))
+      //     // console.log(this.prdList)
+      //   }
+      // },
+
+      getCarList(){
+        var name = localStorage.username;
+        var carInfo = JSON.parse(localStorage.getItem(name +'allInfo'));
+        if(name && carInfo){
+          this.name = name;
+          this.prdList = carInfo;
         }
       }
 
@@ -176,11 +214,12 @@
 
     watch:{
       prdList: {
-          handler (newVal, oldVal) {
-            this.getTotal()
-          },
-          deep: true, // 深度监听
-        }
+        handler (newVal, oldVal) {
+          this.getTotal()
+        },
+        deep: true, // 深度监听
+      },
+      
     },
 
     computed: {
@@ -190,7 +229,7 @@
     mounted(){
       // this.getLocalstroage();
       this.getlist();
-      this.localStorage = localStorage.name;
+      // this.localStorage = localStorage.name;
       this.selectAll();
       
       // console.log(this.localStorage);
@@ -220,7 +259,7 @@
     width: 100%;
     height: 100%;
     background: #EAEAEA;
-    overflow: hidden;
+    // overflow: hidden;
   }
   .tit,#hot-sugg h2,.editor{
     display: block;
