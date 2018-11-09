@@ -12,16 +12,12 @@ import classroom from "../views/NewsList/classroom.vue";
 import huaweiNews from "../views/NewsList/huaweiNews.vue";
 import test from "../views/NewsList/test.vue";
 import huawei from "../views/topbar/huawei.vue";
-import newgoods from "../views/topbar/newgoods.vue";
-import morephone from "../views/morephone/morephone.vue";
+import newgoods from '../views/NewsGood.vue'
+import morephone from '../views/PhoneList.vue'
 
 import Login from '@/views/login/login.vue'
 import register from '@/views/register/register.vue'
 import classify from '@/views/classify/classify.vue'
-
-import NewsGood from '../views/NewsGood.vue'
-import PhoneList from '../views/PhoneList.vue'
-
 
 // 创建路由对象
 var router = new VueRouter({
@@ -35,7 +31,7 @@ var router = new VueRouter({
     },
     {
       path: "/category/view",
-      component: category
+      component: classify
     },
     {
       path: "/find",
@@ -94,14 +90,6 @@ var router = new VueRouter({
       component: morephone
     },
     {
-      path: '/newsgood',
-      component: NewsGood
-    },
-    {
-      path: '/phonelist',
-      component: PhoneList
-    },
-    {
       path: '/login',
       name: 'login',
       component: Login
@@ -123,7 +111,7 @@ var router = new VueRouter({
 
 
 
-Vue.use(Router)
+// Vue.use(Router)
 
 
 export default router;

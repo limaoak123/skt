@@ -78,15 +78,9 @@
 </template>
 
 
-
-<style scoped>
-  @import '../static/reset.css';
-</style>
-
-
 <script>
-import Rem from "./assets/js/rem.js";
-new Rem();
+// import Rem from "./assets/js/rem.js";
+// new Rem();
 export default {
   // data() {
   //   return {};
@@ -99,6 +93,7 @@ export default {
 
 <style scoped>
 @import "../static/reset.css";
+
 .app-container {
   /* padding-top: 80px; */
   /* padding-bottom: 50px; */

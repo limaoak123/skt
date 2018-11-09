@@ -207,11 +207,13 @@ export default {
        if(index==2){
         this.flag = !this.flag;
         if(this.flag){
+          console.log('价格排序')
           this.pList.sort((a,b)=>{
+            // console.log(1)
             return a.price<b.price;
-          }); 
+          });
         }else{
-          this.pList.sort((a,b)=>{
+         this.pList.sort((a,b)=>{
             return a.price>b.price;
           });
         }
