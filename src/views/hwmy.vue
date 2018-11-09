@@ -6,10 +6,10 @@
                 <p class="u-bg" :style="searchBarFixed == true ? 'opacity: 1;' :'opacity: 0;'"></p> 
                 <div class="u-state" v-if="login==false">
                     <p class="u-login" :style="searchBarFixed == true ? 'display:table-cell;' :'display: block;'">
-                        <a href="/account/applogin?url=/personal">
+                        <router-link to="/login">
                         登录 / 注册
                             <i class="arrow"></i>
-                        </a> 
+                        </router-link>
                         <a href="/account/applogin?url=/personal" class="u-m-vip" :style="searchBarFixed == true ? 'display: inline-block' :'display: block;'">享受更多会员权益</a>
                     </p>
                 </div>
@@ -377,16 +377,14 @@
                 <h3>
                      <span>
                          登录即可查看全部动态消息
-                        <a href="/account/applogin?url=/personal">
-                            现在登录&gt;
-                        </a>
+                        <router-link to="login">现在登录&gt;</router-link>
                     </span>
                 </h3>
             </section>
         </div>
 
 
-        <div>
+        <div style="margin-bottom: 1.8rem;">
             <section class="bottom-area">
                 <p class="login">
                     <a href="/account/applogin?url=/personal" rel="nofollow">
@@ -433,11 +431,14 @@
                 
             </section>
         </div>
+        <table-car></table-car>
     </div>
 </template>
 
 <script>
 import axios from "axios"
+import tableCar from "./home/table-car.vue";
+
 
 export default {
     data(){
@@ -447,6 +448,9 @@ export default {
             login:false,
             loginName:''
         }
+    },
+    components: {
+    tableCar
     },
     methods:{
         getRecommend(){
@@ -467,9 +471,8 @@ export default {
             }
         },
         ifLogin(){
-            if(localStorage.getItem('loginInfo')){
-                this.loginName=localStorage.getItem('loginInfo');
-                // console.log(localStorage.getItem('loginInfo'))
+            if(localStorage.getItem('userInfo')){
+                this.loginName=localStorage.getItem('userInfo');
                 this.login=true;
             }else{
                 this.login=false;
@@ -485,6 +488,8 @@ export default {
 </script>
 
 <style scoped>
+ @import url(https://res8.vmallres.com/shopdc/cdn/modules-bf/yiqm/com/mb/css/swiper.min.css?v=20181106121156);
+
   @import url(https://res8.vmallres.com/shopdc/cdn/modules/common/mb/css/common.css?v=20181106000017);
 
 address, caption, cite, code, dfn, em, th, var {
@@ -1004,7 +1009,7 @@ h1, h2, h3, h4, h5, h6 {
 .bottom-area {
     position: relative;
     bottom: 0;
-    z-index: 19;
+    /* z-index: 19; */
     width: 100%;
     background-color: #ffffff;
     margin-top: 0.4rem;
@@ -1017,13 +1022,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bottom-area p.login {
     padding: 0.25rem 0;
-    height: 1.5rem;
+    height: 2rem;
     display: block;
     font-size: 0;
 }
 .bottom-area p.touch {
-    padding: 0.5rem 0;
-    height: 2.45rem;
+    padding: 0.6rem 0;
+    height: 3.1rem;
     text-align: center;
     display: block;
     font-size: 0;
@@ -1091,8 +1096,8 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url('../../static/hw/computer.png');
 }
 .bottom-area p.copyright {
-    padding: 0.25rem 0 0.9rem 0;
-    line-height: 0.7;
+    padding: 0.3rem 0 1.5rem 0;
+    line-height: 1;
 }
 .clearfix:before, .clearfix:after {
     content: " ";

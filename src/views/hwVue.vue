@@ -6,7 +6,8 @@
             <div class="area">
                 <a class="unlogin" href="javascript:;" :style="login== true ? 'display: none; background: rgba(255, 255, 255, 0.1);':'display: block; background: rgba(255, 255, 255, 0.1);'">
                     <img src="https://res.vmallres.com/pimages//sale/2018-02/20180227205926118.png">
-                    <span>登录 | 注册</span>
+                    <!-- <span></span> -->
+                    <router-link to="register" tag="span">登录 | 注册</router-link>
                 </a>
                 <a class="login hide" href="javascript:;" :style="login== true ? 'display: block; background: rgba(255, 255, 255, 0.1);':'display: none; background: rgba(255, 255, 255, 0.1);'">
                     <img src="https://res.vmallres.com/pimages//sale/2018-02/20180227205926118.png" :style="login== true ? '':'display: none;'">
@@ -641,14 +642,11 @@ export default {
         },
         routerTo(sid){
             // console.log(sid);
-            this.$router.push({name:'xq',params:{id:sid}})
-        },
-        setLocalStorage(){
-            localStorage.setItem('loginInfo', '1');
+            this.$router.push({name:'prdInfo',query:{id:sid}})
         },
         ifLogin(){
             if(localStorage.getItem('loginInfo')){
-                this.loginName=localStorage.getItem('loginInfo');
+                this.loginName=localStorage.getItem('userInfo');
                 // console.log(localStorage.getItem('loginInfo'))
                 this.login=true
             }else{
@@ -660,7 +658,6 @@ export default {
         window.addEventListener('scroll', this.handleScroll);
         this.getList();
         this.createSwiper();
-        this.setLocalStorage();
         this.ifLogin();
     }
 };
@@ -669,6 +666,7 @@ export default {
 
 <style scoped>
   @import url(https://res8.vmallres.com/shopdc/cdn/modules/common/mb/css/common.css?v=20181106000017);
+ @import url(https://res8.vmallres.com/shopdc/cdn/modules-bf/yiqm/com/mb/css/swiper.min.css?v=20181106121156);
 
 .mod-topnav {
   position: relative;

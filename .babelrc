@@ -9,6 +9,10 @@
     "stage-2"
   ],
   "plugins": ["transform-vue-jsx", "transform-runtime"],
+  "ignore": [
+    "./src/lib/js/mui.js",
+    "./src/lib/css/mui.css"
+  ],
   "env": {
     "test": {
       "presets": ["env", "stage-2"],
