@@ -8,7 +8,7 @@
             <ul>
                 <li v-for="(item, index) in tabs"
                   :key="index"
-                  :class="{'active': curTab === item.id }"
+                  :class="{'activelm': curTab === item.id }"
                   @click="curTab = item.id">
                   <a href = 'javascript:;' @click="fun(index)"> {{ item.name }}</a>
                 </li>               
@@ -90,10 +90,10 @@
     border-right: 1px solid rgba(202,21,30,0.3);
 
   }
-  .subTab li.active{
+  .subTab li.activelm{
     background-color: rgba(202,21,30,0.03);
   }
-  .subTab li.active a{
+  .subTab li.activelm a{
     color: #ca151e;
   }
   .subTab li:last-child{
@@ -230,7 +230,7 @@ export default {
      },
      routerTo(sid){
        console.log(sid);
-       this.$router.push({name: 'prdInfo', query: {goodId:sid}});
+       this.$router.push({path: '/prdInfo', query: {goodId:sid}});
      },
      backHome(){
        this.$router.replace("/")

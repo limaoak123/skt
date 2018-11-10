@@ -47,7 +47,7 @@ export default {
      },
      routerTo(sid){
        console.log(sid);
-       this.$router.push({name: 'prdInfo', query: {goodId:sid}});
+       this.$router.push({path: '/prdInfo', query: {goodId:sid}});
      }
     },
     mounted(){
