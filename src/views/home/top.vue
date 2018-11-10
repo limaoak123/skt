@@ -9,10 +9,9 @@
           <input type="text" placeholder="荣耀6" readonly>
         </div>
         <div class="header-right">
-          <ul>
+          <ul v-show="iflogin==false">
             <li><img src="../../img/message.png" alt=""></li>
-            <router-link to='/login' tag='li'>登入</router-link>
-            
+            <router-link to='/login' tag='li'>登入</router-link>    
           </ul>
         </div>
       </header>
@@ -47,7 +46,9 @@
 import mui from "../../lib/js/mui.js";
 export default {
   data() {
-    return {};
+    return {
+      iflogin: false
+    };
   },
   methods: {
     on() {
@@ -55,12 +56,18 @@ export default {
     },
     newgoods() {
       this.$router.push({ name: "newgoods" });
+    },
+    loginbtn(){
+      if(localStorage.getItem('username')){
+        this.iflogin = true
+      }
     }
   },
   mounted() {
     mui(".mui-scroll-wrapper").scroll({
       deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
+   this.loginbtn();
   }
 };
 </script>

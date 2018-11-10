@@ -645,8 +645,8 @@ export default {
             this.$router.push({name:'prdInfo',query:{id:sid}})
         },
         ifLogin(){
-            if(localStorage.getItem('loginInfo')){
-                this.loginName=localStorage.getItem('userInfo');
+            if(localStorage.getItem('username')){
+                this.loginName=localStorage.getItem('username');
                 // console.log(localStorage.getItem('loginInfo'))
                 this.login=true
             }else{

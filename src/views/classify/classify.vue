@@ -122,12 +122,17 @@
         </div>
       </section>
       </article>
+      <tableCar></tableCar>
     </div>
 </template>
 
 <script>
 import axios from 'axios'
+import tableCar from "../home/table-car.vue"
 export default {
+  components : {
+      tableCar
+  },
   name: 'classify',
   data () {
     return {

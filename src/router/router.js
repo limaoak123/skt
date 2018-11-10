@@ -30,6 +30,7 @@ var router = new VueRouter({
     },
     {
       path: "/home",
+      name : 'home',
       component: HomeVontainer
     },
     {

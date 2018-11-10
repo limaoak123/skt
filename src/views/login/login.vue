@@ -191,9 +191,10 @@
                if(result.data.code == 100){
                    console.log(result);
                    var userInfo = result.data.data.username
-                   localStorage.setItem('userInfo',userInfo);
-                   console.log(localStorage.getItem('userInfo'));
-                   alert('登录成功');
+                   localStorage.setItem('username',userInfo);
+                   console.log(localStorage.getItem('username'));
+                //    alert('登录成功');
+                this.$router.push({name: 'home'})
                }
            })
         },

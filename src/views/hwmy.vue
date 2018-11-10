@@ -7,7 +7,7 @@
                 <div class="u-state" v-if="login==false">
                     <p class="u-login" :style="searchBarFixed == true ? 'display:table-cell;' :'display: block;'">
                         <router-link to="/login">
-                        登录 / 注册
+                             登录 / 注册
                             <i class="arrow"></i>
                         </router-link>
                         <a href="/account/applogin?url=/personal" class="u-m-vip" :style="searchBarFixed == true ? 'display: inline-block' :'display: block;'">享受更多会员权益</a>
@@ -471,8 +471,8 @@ export default {
             }
         },
         ifLogin(){
-            if(localStorage.getItem('userInfo')){
-                this.loginName=localStorage.getItem('userInfo');
+            if(localStorage.getItem('username')){
+                this.loginName=localStorage.getItem('username');
                 this.login=true;
             }else{
                 this.login=false;

@@ -383,7 +383,7 @@
   <div>
     <section class="bottom-area">
       <p class="login">
-        <a href="">登入</a>
+        <a href="javascript:;" @click = "login">{{msg}}</a>
         <a href="">反馈</a>
       </p>
       <p class="touch">
@@ -425,7 +425,9 @@ export default {
     return {
       homeimg: [],
       homePhoneList: [],
-      recommendList: []
+      recommendList: [],
+      iflogin : false,
+      msg: "登入"
     };
   },
   components: {
@@ -476,12 +478,33 @@ export default {
     },
     more() {
       this.$router.push({ name: "morephone" });
+    },
+    ilogin() {
+     if(localStorage.getItem('username')){
+        this.iflogin = true;
+        this.msg = "注销"       
+      }
+    },
+    login(){
+      if(this.iflogin){
+         localStorage.removeItem("username")
+         this.$router.go(0)
+      }else{
+        this.$router.push({name:"login"})
+      }
     }
+  },
+  mounted(){
+      this.ilogin();
   },
   created() {
     this.HomePhone();
     this.Homeimg();
-  }
+    this.iflogin();
+  },
+
+
+  
 };
 </script>
 <style lang="scss" scoped>
